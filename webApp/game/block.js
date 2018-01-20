@@ -10,7 +10,7 @@ function block(x, y, size, color = "#FFFFFF")
 		push();
 		noStroke();
 		fill(color);
-		rect(this.x, this.y, this.size, this.size);
+		rect(this.x * this.size, this.y * this.size, this.size, this.size);
 		pop();
 	}
 }

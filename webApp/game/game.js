@@ -1,6 +1,7 @@
 var canvas;
 var person;
 var maze;
+
 var blockSize = 20;
 
 function setup()
@@ -10,7 +11,7 @@ function setup()
 
 	background(0,0,0);
 
-	person = new block(200, 20, 20);
+	person = new block(3, 4, blockSize);
 	person.show();
 
 	maze = getMaze();
@@ -34,7 +35,7 @@ function getMaze()
 	{
 		for(j = 0; j < maze_ys.length; j++)
 		{
-			rtn.push(new block(maze_xs[i] * blockSize, maze_ys[i] * blockSize, blockSize, "#888888"));
+			rtn.push(new block(maze_xs[i], maze_ys[i], blockSize, "#888888"));
 		}
 	}
 	return rtn;
