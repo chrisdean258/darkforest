@@ -62,7 +62,7 @@
   </tr>
   <tr>
     <td>
-      <select id="moveSelect" class="ui search dropdown" onselect="selectCallbackMove()">
+      <select id="moveSelect" class="ui search dropdown" onselect="selectCallbackMove">
 	    <option value="" selected disabled>move</option>
 	    <option value="person.moveUp(board);">move up</option>
 	    <option value="person.moveLeft(board);">move left</option>
@@ -74,7 +74,7 @@
   </tr>
   <tr>
     <td>
-	  <select id="ifSelect" class="ui search dropdown" onselect="selectCallbackIf()">
+	  <select id="ifSelect" class="ui search dropdown" onselect="selectCallbackIf">
 	    <option value="" selected disabled>if</option>
 		<option value="if(person.canMove_up(board)){">if can move up</option>
 		<option value="if(person.canMove_left(board)){">if can move left</option>
@@ -86,7 +86,7 @@
   </tr>
   <tr>
     <td>
-	  <select id="whileSelect" class="ui search dropdown" onselect="selectCallbackWhile()">
+	  <select id="whileSelect" class="ui search dropdown" onselect="selectCallbackWhile">
 	    <option value="" selected disabled>while</option>
 		<option value="while(person.canMove_up()){">while can move up</option>
 		<option value="while(person.canMove_left()){">while can move left</option>
@@ -98,7 +98,7 @@
   </tr>
   <tr>
     <td>
-	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor()">
+	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor">
 	    <option value="" selected disabled>for</option>
 		<option value="1">for 1 step</option>
 		<option value="2">for 2 steps</option>
@@ -126,7 +126,7 @@
   </tr>
   <tr>
     <td>
-	  <select id="doneSelect" class="ui search dropdown" onselect="selectCallbackDone()">
+	  <select id="doneSelect" class="ui search dropdown" onselect="selectCallbackDone">
 	    <option value="done">done</option>
 	  </select>
 	</td>
