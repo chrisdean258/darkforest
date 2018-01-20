@@ -84,7 +84,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 		<option value="if(person.canMove_right(board)){">if can move right</option>
 		<option value="if(person.canMove_down(board)){">if can move down</option>
 	  </select>
-			<button onclick="selectCallbackIf"></button>
+			<button onclick="selectCallbackIf(); return false;"></button>
 	</td>
     <td>placeholder1</td>
   </tr>
@@ -97,7 +97,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 		<option value="while(person.canMove_right()){">while can move right</option>
 		<option value="while(person.canMove_down()){">while can move down</option>
 	  </select>
-			<button onclick="selectCallbackWhile"></button>
+			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
     <td>placeholder2</td>
   </tr>
@@ -126,7 +126,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 		<option value="19">for 19 steps</option>
 		<option value="20">for 20 steps</option>
 	  </select>
-			<button onclick="selectCallbackFor"></button>
+			<button onclick="selectCallbackFor(); return false;"></button>
 	</td>
     <td>placeholder3</td>
   </tr>
@@ -138,7 +138,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
   </tr>
   <tr>
     <td>
-      <button class="button button1" style="margin-right: 50px"><h3>start</h3></button>
+      <button class="button button1" style="margin-right: 50px" onclick="evaluate_arr();return false;"><h3>start</h3></button>
     </td>
     <td>
       <button class="button button1" style="margin-left: 50px"><h3>stop</h3></button>
