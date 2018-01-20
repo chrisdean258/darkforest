@@ -15,6 +15,11 @@ function setup()
 	canvas = createCanvas(boardWidth * blockSize, boardHeight * blockSize);
 	canvas.parent("#canvasparentdiv");
 
+	reset();
+}
+
+function reset()
+{
 	background(0,0,0);
 
 
@@ -46,6 +51,8 @@ function setup()
 
 	board[boardWidth-1][0].visible = true;
 
+	person.x = 0;
+	person.y = boardHeight-1;
 }
 
 function draw()
@@ -60,6 +67,8 @@ function draw()
 	}
 
 	person.show();
+
+	if(person.x === boardWidth-1 && person.y === 0) reset();
 }
 
 function revealAll()
