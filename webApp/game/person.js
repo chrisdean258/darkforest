@@ -4,6 +4,7 @@ function Person(x, y, blockSize, imageName)
 	this.y = y;
 	this.blockSize = blockSize;
 	this.image = loadImage(imageName);
+	this.moves = [];
 
 	this.show = function()
 	{
@@ -11,6 +12,15 @@ function Person(x, y, blockSize, imageName)
 		noStroke();
 		image(this.image, this.x*this.blockSize, this.y*this.blockSize, this.blockSize, this.blockSize);
 		pop();
+	}
+	this.update = function()
+	{
+		if(this.moves.length > 0)
+		{
+			this.moves[0](this);
+			this.moves.splice(0,1);
+			this.show();
+		}
 	}
 
 	this.canMove_up = function(b)
@@ -37,7 +47,7 @@ function Person(x, y, blockSize, imageName)
 	{
 		if(this.canMove_right(b))
 		{
-			this.x++;
+			this.moves.push(function(p){p.x++;});
 			try { b[this.x+1][this.y-1].visible = true; } catch(ex){}
 			try { b[this.x+1][this.y-0].visible = true; } catch(ex){}
 			try { b[this.x+1][this.y+1].visible = true; } catch(ex){}

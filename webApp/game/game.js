@@ -12,6 +12,7 @@ function preload()
 
 function setup()
 {
+	frameRate(4);
 	canvas = createCanvas(boardWidth * blockSize, boardHeight * blockSize);
 	canvas.parent("#canvasparentdiv");
 
@@ -68,6 +69,7 @@ function draw()
 		}
 	}
 
+	person.update();
 	person.show();
 
 	if(person.x === boardWidth-1 && person.y === 0) reset();
