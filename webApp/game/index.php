@@ -70,7 +70,10 @@
       </select>
 			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
-    <td>placeholder0</td>
+	<td><label id="RightHandCol"></label></td>
+<script>
+document.getElementById('RightHandCol').innerHTML = arr[0];
+</script>
   </tr>
   <tr>
     <td>
