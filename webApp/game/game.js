@@ -46,8 +46,7 @@ function reset()
 		board[maze_xs[i]][maze_ys[i]].isPath = true;
 	}
 
-	person.x = 0;
-	person.y = boardHeight-1;
+	person.reset();
 
 	board[person.x][person.y-1].visible = true;
 	board[person.x+1][person.y-1].visible = true;
@@ -60,7 +59,6 @@ function reset()
 
 function draw()
 {
-	//background(0);
 	for(var i = 0; i < board.length; i++)
 	{
 		for(var j = 0; j < boardWidth; j++)
@@ -69,7 +67,7 @@ function draw()
 		}
 	}
 
-	person.update();
+	person.update(board);
 	person.show();
 
 	if(person.x === boardWidth-1 && person.y === 0) reset();
