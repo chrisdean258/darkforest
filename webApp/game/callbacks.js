@@ -46,3 +46,9 @@ function evaluate_arr(run=true)
 		person.y = boardHeight-1;
 	}
 }
+
+function clear_arr()
+{
+	arr = ar[];
+	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
+}
