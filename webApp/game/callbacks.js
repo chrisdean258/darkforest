@@ -2,21 +2,21 @@ var arr = []
 
 function selectCallbackMove()
 {
-	arr.push(document.getElementByID("moveSelect").value);
+	arr.push(document.getElementById("moveSelect").value);
 }
 function selectCallbackIf()
 {
-	arr.push(document.getElementByID("ifSelect").value);
+	arr.push(document.getElementById("ifSelect").value);
 }
 function selectCallbackWhile()
 {
-	arr.push(document.getElementByID("whileSelect").value);
+	arr.push(document.getElementById("whileSelect").value);
 }
 function selectCallbackFor()
 {
 	console.log("Callback for");
 	if(this.initialvar == undefined) this.initialvar = [ "k" ];
-	var lc = document.getElementByID("forSelect").value;
+	var lc = document.getElementById("forSelect").value;
 	var lv = this.initialvar.join("");
 
 	arr.push("for(var " + lv + " = 0; " + lv + " < " + lc + " ; " + lv + "++){");
@@ -25,7 +25,7 @@ function selectCallbackFor()
 }
 function selectCallbackDone()
 {
-	arr.push(document.getElementByID("doneSelect").value);
+	arr.push(document.getElementById("doneSelect").value);
 	for(var i = 0; i<arr.length; i++)
 		console.log(arr[i]);
 }
