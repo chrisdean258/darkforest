@@ -5,6 +5,7 @@ function Block(x, y, size, img)
 	this.x = x;
 	this.y = y;
 	this.visible = false;
+	this.inFocus = false;
 	this.image = loadImage(img);
 	this.isPath = false;
 
@@ -12,9 +13,15 @@ function Block(x, y, size, img)
 	{
 		push();
 		noStroke();
-		if(this.visible)
+		if(this.visible && this.inFocus)
 		{
 			image(this.image, this.x * this.size, this.y * this.size, this.size, this.size);
+		}
+		else if(this.visible)
+		{
+			image(this.image, this.x * this.size, this.y * this.size, this.size, this.size);
+			fill("#80000000");
+			rect(this.x * this.size, this.y * this.size, this.size, this.size);
 		}
 		else
 		{
