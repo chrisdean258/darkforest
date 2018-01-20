@@ -65,13 +65,8 @@
   </tr>
   <tr>
     <td>
-<!--    <button class="button button1">^</button>
-    <button class="button button1">v</button>
-    <button class="button button1">-></button>
-    <button class="button button1"><-</button>
--->
       <select class="ui search dropdown">
-	    <option value="">move</option>
+	    <option value="" selected disabled hidden>move</option>
 	    <option value="1">move up</option>
 	    <option value="2">move left</option>
 	    <option value="3">move right</option>
@@ -81,10 +76,9 @@
     <td>Maria Anders</td>
   </tr>
   <tr>
-<!--    <td>Centro comercial Moctezuma</td> -->
     <td>
 	  <select class="ui search dropdown">
-	    <option value="">if</option>
+	    <option value="" selected disabled hidden>if</option>
 		<option value="1">if can move up</option>
 		<option value="2">if can move left</option>
 		<option value="3">if can move right</option>
@@ -94,11 +88,43 @@
     <td>Francisco Chang</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
+    <td>
+	  <select class="ui search dropdown">
+	    <option value="" selected disabled hidden>while</option>
+		<option value="1">while can move up</option>
+		<option value="2">while can move left</option>
+		<option value="3">while can move right</option>
+		<option value="4">while can move down</option>
+	  </select>
+	</td>
     <td>Roland Mendel</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
+    <td>
+	  <select class="ui search dropdown">
+	    <option value="" selected disabled hidden>for</option>
+		<option value="1">for 1 step</option>
+		<option value="2">for 2 step</option>
+		<option value="3">for 3 step</option>
+		<option value="4">for 4 step</option>
+		<option value="5">for 5 step</option>
+		<option value="6">for 6 step</option>
+		<option value="7">for 7 step</option>
+		<option value="8">for 8 step</option>
+		<option value="9">for 9 step</option>
+		<option value="10">for 10 step</option>
+		<option value="11">for 11 step</option>
+		<option value="12">for 12 step</option>
+		<option value="13">for 13 step</option>
+		<option value="14">for 14 step</option>
+		<option value="15">for 15 step</option>
+		<option value="16">for 16 step</option>
+		<option value="17">for 17 step</option>
+		<option value="18">for 18 step</option>
+		<option value="19">for 19 step</option>
+		<option value="20">for 20 step</option>
+	  </select>
+	</td>
     <td>Helen Bennett</td>
   </tr>
   <tr>
