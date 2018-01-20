@@ -68,7 +68,7 @@
 	    <option value="person.moveRight(board);">move right</option>
 	    <option value="person.moveDown(board);">move down</option>
       </select>
-			<input type="button" onclick="selectCallbackMove"></input>
+			<button onclick="selectCallbackMove"></button>
     </td>
     <td>placeholder0</td>
   </tr>
@@ -81,7 +81,7 @@
 		<option value="if(person.canMove_right(board)){">if can move right</option>
 		<option value="if(person.canMove_down(board)){">if can move down</option>
 	  </select>
-			<input type="button" onclick="selectCallbackIf"></input>
+			<button onclick="selectCallbackIf"></button>
 	</td>
     <td>placeholder1</td>
   </tr>
@@ -94,7 +94,7 @@
 		<option value="while(person.canMove_right()){">while can move right</option>
 		<option value="while(person.canMove_down()){">while can move down</option>
 	  </select>
-			<input type="button" onclick="selectCallbackWhile"></input>
+			<button onclick="selectCallbackWhile"></button>
 	</td>
     <td>placeholder2</td>
   </tr>
@@ -123,14 +123,13 @@
 		<option value="19">for 19 steps</option>
 		<option value="20">for 20 steps</option>
 	  </select>
-			<input type="button" onclick="selectCallbackFor"></input>
+			<button onclick="selectCallbackFor"></button>
 	</td>
     <td>placeholder3</td>
   </tr>
   <tr>
     <td>
-			<input type="button" onclick="selectCallbackDone">add</input>
-	  </select>
+			<button onclick="selectCallbackDone">add</button>
 	</td>
     <td>placeholder4</td>
   </tr>
