@@ -9,6 +9,7 @@
 			var boardHeight = 30;
 		</script>
 		<script src="block.js"></script>
+		<script src="person.js"></script>
 		<script src="game.js"></script>
 	<head>
 	<body>

@@ -1,8 +1,15 @@
 var canvas;
 var person;
-var maze;
+var board;
 
 var blockSize = 20;
+
+function preload()
+{
+	board = [];
+	for(var i = 0; i < boardHeight; i++) board.push([]);
+	person = new Person(0, boardHeight-1, blockSize, "friend2.png");
+}
 
 function setup()
 {
@@ -11,32 +18,48 @@ function setup()
 
 	background(0,0,0);
 
-	person = new block(3, 4, blockSize);
-	person.show();
 
-	maze = getMaze();
-	for(var i = 0; i < maze.length; i++)
+	for(var i = 0; i < board.length; i++)
 	{
-		maze[i].show();
+		for(var j = 0; j < boardWidth; j++)
+		{
+			board[i].push(new Block(i, j, blockSize));
+		}
 	}
 
+	for(var i = 0; i < maze_xs.length; i++)
+	{
+		board[maze_xs[i]][maze_ys[i]].color = "#888888";
+	}
+
+	for(var i = 0; i < board.length; i++)
+	{
+		for(var j = 0; j < boardWidth; j++)
+		{
+			board[i][j].show();
+		}
+	}
+
+	board[person.x][person.y-1].visible = true;
+	board[person.x+1][person.y-1].visible = true;
+	board[person.x+1][person.y].visible = true;
+	board[person.x][person.y].visible = true;
+
+	board[boardWidth-1][0].color = "#355c3d";
+	board[boardWidth-1][0].visible = true;
+
+	person.show();
 }
 
 function draw()
 {
-
-}
-
-function getMaze()
-{
-	var i, j;
-	var rtn = [];
-	for(i = 0; i < maze_xs.length; i++)
+	for(var i = 0; i < board.length; i++)
 	{
-		for(j = 0; j < maze_ys.length; j++)
+		for(var j = 0; j < boardWidth; j++)
 		{
-			rtn.push(new block(maze_xs[i], maze_ys[i], blockSize, "#888888"));
+			board[i][j].show();
 		}
 	}
-	return rtn;
+
+	person.show();
 }
