@@ -55,10 +55,6 @@ function selectCallbackDone()
 		console.log(arr[i]);
 }
 
-document.getElementById("doneSelect").addEventListener("select", selectCallbackDone);
-document.getElementById("forSelect").addEventListener("select", selectCallbackFor);
-document.getElementById("whileSelect").addEventListener("select", selectCallbackWhile);
-document.getElementById("moveSelect").addEventListener("select", selectCallbackMove);
 
 </script>
 </head>
@@ -183,6 +179,12 @@ document.getElementById("moveSelect").addEventListener("select", selectCallbackM
 </table>
     </div>
 </div>
+<script>
+document.getElementById("doneSelect").addEventListener("select", selectCallbackDone);
+document.getElementById("forSelect").addEventListener("select", selectCallbackFor);
+document.getElementById("whileSelect").addEventListener("select", selectCallbackWhile);
+document.getElementById("moveSelect").addEventListener("select", selectCallbackMove);
+</script>
 </body>
 </html>
 
