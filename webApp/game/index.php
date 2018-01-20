@@ -63,15 +63,32 @@
   </tr>
   <tr>
     <td>
-    <button class="button button1">^</button>
+<!--    <button class="button button1">^</button>
     <button class="button button1">v</button>
     <button class="button button1">-></button>
     <button class="button button1"><-</button>
+-->
+      <select class="ui search dropdown">
+	    <option value="">move</option>
+	    <option value="1">move up</option>
+	    <option value="2">move left</option>
+	    <option value="3">move right</option>
+	    <option value="4">move down</option>
+      </select>
     </td>
     <td>Maria Anders</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+<!--    <td>Centro comercial Moctezuma</td> -->
+    <td>
+	  <select class="ui search dropdown">
+	    <option value="">if</option>
+		<option value="1">if can move up</option>
+		<option value="2">if can move left</option>
+		<option value="3">if can move right</option>
+		<option value="4">if can move down</option>
+	  </select>
+	</td>
     <td>Francisco Chang</td>
   </tr>
   <tr>
