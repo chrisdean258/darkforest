@@ -13,7 +13,7 @@ function Person(x, y, blockSize, imageName)
 		image(this.image, this.x*this.blockSize, this.y*this.blockSize, this.blockSize, this.blockSize);
 		pop();
 	}
-	this.update()
+	this.update = function()
 	{
 		if(this.moves.length > 0)
 		{

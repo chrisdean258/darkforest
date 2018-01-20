@@ -12,7 +12,7 @@ function preload()
 
 function setup()
 {
-	framerate(4);
+	frameRate(4);
 	canvas = createCanvas(boardWidth * blockSize, boardHeight * blockSize);
 	canvas.parent("#canvasparentdiv");
 
