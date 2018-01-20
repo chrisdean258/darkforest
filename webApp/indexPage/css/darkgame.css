@@ -58,7 +58,7 @@ h3 {
     left: 0;
     top: 50%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -95,7 +95,6 @@ table {
 td, th {
 /*    border: 1px solid #dddddd; */
 	border: none;
-    text-align: center;
+    text-align: left;
     padding: 8px;
 }
-
