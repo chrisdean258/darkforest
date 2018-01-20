@@ -23,13 +23,21 @@ function setup()
 	{
 		for(var j = 0; j < boardWidth; j++)
 		{
-			board[i].push(new Block(i, j, blockSize, "imgs/not_path.png"));
+			if(random() > .1)
+			{
+				board[i].push(new Block(i, j, blockSize, "imgs/not_path.png"));
+			}
+			else
+			{
+				board[i].push(new Block(i, j, blockSize, "imgs/not_path_fun.png"));
+			}
 		}
 	}
 
 	for(var i = 0; i < maze_xs.length; i++)
 	{
 		board[maze_xs[i]][maze_ys[i]].image = loadImage("imgs/path.png");
+		board[maze_xs[i]][maze_ys[i]].isPath = true;
 	}
 
 	board[person.x][person.y-1].visible = true;
@@ -53,4 +61,16 @@ function draw()
 	}
 
 	person.show();
+}
+
+function revealAll()
+{
+	for(var i = 0; i < 30; i++)
+	{
+		for(var j = 0; j < 30; j++)
+		{
+			board[i][j].visible = true;
+		}
+	}
+
 }
