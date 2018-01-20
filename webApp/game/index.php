@@ -52,7 +52,45 @@
       <div id="canvasparentdiv"></div>
     </div>
     <div id="rightcolumn">
-       <center> Right</center>
+       <table>
+  <tr>
+    <th>Commands</th>
+    <th>Your Code</th>
+  </tr>
+  <tr>
+    <td>
+    <button class="button button1">^</button>
+    <button class="button button1">v</button>
+    <button class="button button1">-></button>
+    <button class="button button1"><-</button>
+    </td>
+    <td>Maria Anders</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+  </tr>
+  <tr>
+    <td>
+      <button class="button button1" style="margin-right: 50px"><h3>start</h3></button>
+    </td>
+    <td>
+      <button class="button button1" style="margin-left: 50px"><h3>stop</h3></button>
+    </td>
+  </tr>
+</table>
     </div>
 </div>
 </body>
