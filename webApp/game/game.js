@@ -73,3 +73,17 @@ function revealAll()
 	}
 
 }
+
+function keyPressed()
+{
+	if (keyCode === LEFT_ARROW) {
+		person.moveLeft(board);
+	} else if (keyCode === RIGHT_ARROW) {
+		person.moveRight(board);
+	} else if (keyCode === UP_ARROW) {
+		person.moveUp(board);
+	} else if (keyCode === DOWN_ARROW) {
+		person.moveDown(board);
+	}
+
+}
