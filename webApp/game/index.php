@@ -19,44 +19,7 @@
 		<script src="block.js"></script>
 		<script src="person.js"></script>
 		<script src="game.js"></script>
-		<!--script src="callbacks.js"></script-->
-<script>
-
-
-var arr = []
-
-function selectCallbackMove()
-{
-	arr.push(document.getElementById("moveSelect").value);
-}
-function selectCallbackIf()
-{
-	arr.push(document.getElementById("ifSelect").value);
-}
-function selectCallbackWhile()
-{
-	arr.push(document.getElementById("whileSelect").value);
-}
-function selectCallbackFor()
-{
-	console.log("Callback for");
-	if(this.initialvar == undefined) this.initialvar = [ "k" ];
-	var lc = document.getElementById("forSelect").value;
-	var lv = this.initialvar.join("");
-
-	arr.push("for(var " + lv + " = 0; " + lv + " < " + lc + " ; " + lv + "++){");
-
-	this.initialvar.push("j");
-}
-function selectCallbackDone()
-{
-	arr.push(document.getElementById("doneSelect").value);
-	for(var i = 0; i<arr.length; i++)
-		console.log(arr[i]);
-}
-
-
-</script>
+		<script src="callbacks.js"></script>
 </head>
 <body>
 
@@ -98,7 +61,7 @@ function selectCallbackDone()
   </tr>
   <tr>
     <td>
-      <select id="moveSelect" class="ui search dropdown" onselect="selectCallbackMove">
+      <select id="moveSelect" class="ui search dropdown" onchange="selectCallbackMove">
 	    <option value="" selected disabled>move</option>
 	    <option value="person.moveUp(board);">move up</option>
 	    <option value="person.moveLeft(board);">move left</option>
@@ -110,7 +73,7 @@ function selectCallbackDone()
   </tr>
   <tr>
     <td>
-	  <select id="ifSelect" class="ui search dropdown" onselect="selectCallbackIf">
+	  <select id="ifSelect" class="ui search dropdown" onchange="selectCallbackIf">
 	    <option value="" selected disabled>if</option>
 		<option value="if(person.canMove_up(board)){">if can move up</option>
 		<option value="if(person.canMove_left(board)){">if can move left</option>
@@ -122,7 +85,7 @@ function selectCallbackDone()
   </tr>
   <tr>
     <td>
-	  <select id="whileSelect" class="ui search dropdown" onselect="selectCallbackWhile">
+	  <select id="whileSelect" class="ui search dropdown" onchange="selectCallbackWhile">
 	    <option value="" selected disabled>while</option>
 		<option value="while(person.canMove_up()){">while can move up</option>
 		<option value="while(person.canMove_left()){">while can move left</option>
@@ -134,7 +97,7 @@ function selectCallbackDone()
   </tr>
   <tr>
     <td>
-	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor">
+	  <select id="forSelect" class="ui search dropdown" onchange="selectCallbackFor">
 	    <option value="" selected disabled>for</option>
 		<option value="1">for 1 step</option>
 		<option value="2">for 2 steps</option>
@@ -162,7 +125,7 @@ function selectCallbackDone()
   </tr>
   <tr>
     <td>
-	  <select id="doneSelect" class="ui search dropdown" onselect="selectCallbackDone">
+	  <select id="doneSelect" class="ui search dropdown" onchange="selectCallbackDone">
 	    <option value="done">done</option>
 	  </select>
 	</td>
@@ -179,13 +142,6 @@ function selectCallbackDone()
 </table>
     </div>
 </div>
-<script>
-document.getElementById("doneSelect").addEventListener("select", selectCallbackDone);
-document.getElementById("doneSelect").addEventListener("select", function(){console.log("why");});
-document.getElementById("forSelect").addEventListener("select", selectCallbackFor);
-document.getElementById("whileSelect").addEventListener("select", selectCallbackWhile);
-document.getElementById("moveSelect").addEventListener("select", selectCallbackMove);
-</script>
 </body>
 </html>
 
