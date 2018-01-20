@@ -13,10 +13,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
-
-
 </head>
 <body>
 
@@ -56,10 +52,11 @@
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Login to Your Account</h1><br>
-				  <form>
+				  <form id="loginForm" method="post" action="auth.php">
 					<input type="text" name="user" placeholder="Username">
 					<input type="password" name="pass" placeholder="Password">
-					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+					<input type="button" value="Login" class="login loginmodal-submit" onclick="loginValidate()">
+				<!--	<input type="submit" name="login" class="login loginmodal-submit" value="Login">-->
 				  </form>
 					
 				  <div class="login-help">
@@ -69,6 +66,12 @@
 			</div>
 		  </div>
 
+<script>
+	function loginValidate(){
+ 	  document.getElementById("loginForm").submit();
+	  alert("loginValidate was called");
+	}
+</script>
 
 </body>
 </html>
