@@ -19,7 +19,7 @@
 		<script src="block.js"></script>
 		<script src="person.js"></script>
 		<script src="game.js"></script>
-		<script src="callbacks.js"></script>
+		<!--script src="callbacks.js"></script-->
 <script>
 
 
