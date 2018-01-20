@@ -57,6 +57,7 @@
        <table>
   <tr>
     <th>Commands</th>
+    <th>Your Code</th>
   </tr>
   <tr>
     <td>
@@ -69,7 +70,7 @@
       </select>
 			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
-	<td><label id="RightHandCol"></label></td>
+	<td rowspan=6><label id="RightHandCol"></label></td>
   </tr>
   <tr>
     <td>
@@ -139,4 +140,3 @@
 </div>
 </body>
 </html>
-
