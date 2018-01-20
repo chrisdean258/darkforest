@@ -19,6 +19,7 @@ function Person(x, y, blockSize, imageName)
 		{
 			this.moves[0](this);
 			this.moves.splice(0,1);
+			this.show();
 		}
 	}
 
