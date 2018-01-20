@@ -75,9 +75,9 @@ function draw()
 
 function revealAll()
 {
-	for(var i = 0; i < 30; i++)
+	for(var i = 0; i < boardWidth; i++)
 	{
-		for(var j = 0; j < 30; j++)
+		for(var j = 0; j < boardHeight; j++)
 		{
 			board[i][j].visible = true;
 		}
