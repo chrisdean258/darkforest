@@ -71,9 +71,9 @@
 			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
 	<td><label id="RightHandCol"></label></td>
-<script>
+<!--<script>
 document.getElementById('RightHandCol').innerHTML = arr[0];
-</script>
+</script> -->
   </tr>
   <tr>
     <td>
