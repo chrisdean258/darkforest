@@ -21,4 +21,7 @@ function draw()
 
 }
 
-function getMaze();
+function getMaze()
+{
+
+}
