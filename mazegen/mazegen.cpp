@@ -236,7 +236,7 @@ void Maze::PrintForChris()
 		for(j=0; j<c; j++)
 			if(board[i][j])
 				printf(" %d",j);
-	printf(" ];\n");
+	printf(" ]; ");
 
 	printf("var maze_ys = ");
 	printf("[");
@@ -244,9 +244,9 @@ void Maze::PrintForChris()
 		for(j=0; j<c; j++)
 			if(board[i][j])
 				printf(" %d",i);
-	printf(" ];\n");
+	printf(" ]; ");
 
-	printf("var boardWidth = %d;\n",c);
+	printf("var boardWidth = %d; ",c);
 	printf("var boardHeight = %d;\n",r);
 }
 
