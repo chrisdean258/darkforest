@@ -19,4 +19,5 @@ function selectCallbackFor()
 function selectCallbackDone()
 {
 	arr.push(document.getElementByID("doneSelect").value);
+	print(arr);
 }

@@ -15,10 +15,6 @@
 			<?php
 			echo exec("/home/colin/darkforest/mazegen/mazegen 30 30");
 			?>
-			//var maze_xs = [ 1, 2, 3, 4, 5, 6, 7 ];
-			//var maze_ys = [ 1, 2, 3, 4, 5, 6, 7 ];
-			//var boardWidth = 30;
-			//var boardHeight = 30;
 		</script>
 		<script src="block.js"></script>
 		<script src="person.js"></script>
@@ -67,7 +63,7 @@
   <tr>
     <td>
       <select id="moveSelect" class="ui search dropdown" onselect="selectCallbackMove()">
-	    <option value="" selected disabled hidden>move</option>
+	    <option value="" selected disabled>move</option>
 	    <option value="move up">move up</option>
 	    <option value="move left">move left</option>
 	    <option value="move right">move right</option>
@@ -79,7 +75,7 @@
   <tr>
     <td>
 	  <select id="ifSelect" class="ui search dropdown" onselect="selectCallbackIf()">
-	    <option value="" selected disabled hidden>if</option>
+	    <option value="" selected disabled>if</option>
 		<option value="if can move up">if can move up</option>
 		<option value="if can move left">if can move left</option>
 		<option value="if can move right">if can move right</option>
@@ -91,7 +87,7 @@
   <tr>
     <td>
 	  <select id="whileSelect" class="ui search dropdown" onselect="selectCallbackWhile()">
-	    <option value="" selected disabled hidden>while</option>
+	    <option value="" selected disabled>while</option>
 		<option value="while can move up">while can move up</option>
 		<option value="while can move left">while can move left</option>
 		<option value="while can move right">while can move right</option>
@@ -103,7 +99,7 @@
   <tr>
     <td>
 	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor()">
-	    <option value="" selected disabled hidden>for</option>
+	    <option value="" selected disabled>for</option>
 		<option value="for 1 step">for 1 step</option>
 		<option value="for 2 steps">for 2 steps</option>
 		<option value="for 3 steps">for 3 steps</option>
