@@ -57,7 +57,6 @@
        <table>
   <tr>
     <th>Commands</th>
-    <th>Your Code</th>
   </tr>
   <tr>
     <td>
@@ -71,9 +70,6 @@
 			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
 	<td><label id="RightHandCol"></label></td>
-<!--<script>
-document.getElementById('RightHandCol').innerHTML = arr[0];
-</script> -->
   </tr>
   <tr>
     <td>
@@ -86,7 +82,6 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 	  </select>
 			<button onclick="selectCallbackIf(); return false;"></button>
 	</td>
-    <td></td>
   </tr>
   <tr>
     <td>
@@ -100,7 +95,6 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 	  </select>
 			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
-    <td></td>
   </tr>
   <tr>
     <td>
@@ -129,20 +123,15 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 	  </select>
 			<button onclick="selectCallbackFor(); return false;"></button>
 	</td>
-    <td></td>
   </tr>
   <tr>
     <td>
 			<button onclick="selectCallbackDone(); return false;">end</button>
 	</td>
-    <td></td>
   </tr>
   <tr>
     <td>
       <button class="button button1" style="margin-right: 50px" onclick="evaluate_arr();return false;"><h3>start</h3></button>
-    </td>
-    <td>
-      <button class="button button1" style="margin-left: 50px"><h3>stop</h3></button>
     </td>
   </tr>
 </table>
