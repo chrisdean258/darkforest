@@ -61,43 +61,46 @@
   </tr>
   <tr>
     <td>
-      <select id="moveSelect" class="ui search dropdown" onchange="selectCallbackMove">
+      <select id="moveSelect" class="ui search dropdown">
 	    <option value="" selected disabled>move</option>
 	    <option value="person.moveUp(board);">move up</option>
 	    <option value="person.moveLeft(board);">move left</option>
 	    <option value="person.moveRight(board);">move right</option>
 	    <option value="person.moveDown(board);">move down</option>
       </select>
+			<input type="button" onclick="selectCallbackMove"></input>
     </td>
     <td>placeholder0</td>
   </tr>
   <tr>
     <td>
-	  <select id="ifSelect" class="ui search dropdown" onchange="selectCallbackIf">
+	  <select id="ifSelect" class="ui search dropdown">
 	    <option value="" selected disabled>if</option>
 		<option value="if(person.canMove_up(board)){">if can move up</option>
 		<option value="if(person.canMove_left(board)){">if can move left</option>
 		<option value="if(person.canMove_right(board)){">if can move right</option>
 		<option value="if(person.canMove_down(board)){">if can move down</option>
 	  </select>
+			<input type="button" onclick="selectCallbackIf"></input>
 	</td>
     <td>placeholder1</td>
   </tr>
   <tr>
     <td>
-	  <select id="whileSelect" class="ui search dropdown" onchange="selectCallbackWhile">
+	  <select id="whileSelect" class="ui search dropdown">
 	    <option value="" selected disabled>while</option>
 		<option value="while(person.canMove_up()){">while can move up</option>
 		<option value="while(person.canMove_left()){">while can move left</option>
 		<option value="while(person.canMove_right()){">while can move right</option>
 		<option value="while(person.canMove_down()){">while can move down</option>
 	  </select>
+			<input type="button" onclick="selectCallbackWhile"></input>
 	</td>
     <td>placeholder2</td>
   </tr>
   <tr>
     <td>
-	  <select id="forSelect" class="ui search dropdown" onchange="selectCallbackFor">
+	  <select id="forSelect" class="ui search dropdown">
 	    <option value="" selected disabled>for</option>
 		<option value="1">for 1 step</option>
 		<option value="2">for 2 steps</option>
@@ -120,6 +123,7 @@
 		<option value="19">for 19 steps</option>
 		<option value="20">for 20 steps</option>
 	  </select>
+			<input type="button" onclick="selectCallbackFor"></input>
 	</td>
     <td>placeholder3</td>
   </tr>
