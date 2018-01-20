@@ -25,6 +25,7 @@ function reset()
 
 	for(var i = 0; i < board.length; i++)
 	{
+		board[i] = [];
 		for(var j = 0; j < boardWidth; j++)
 		{
 			if(random() > .1)
