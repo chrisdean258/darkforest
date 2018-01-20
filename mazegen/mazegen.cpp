@@ -1,11 +1,6 @@
 //mazegen.cpp
 
 
-
-
-//cmd arg for more or less legal squares
-
-
 #include <cstdio>
 #include <cstdlib>
 #include <vector>
@@ -24,6 +19,7 @@ class Maze
 		Maze(int,int);
 		void GenMaze();
 		void Print();
+		void PrintForChris();
 
 	protected:
 		int wr; 	//working
@@ -108,7 +104,8 @@ int Maze::IsPossibleBlock(int a,int b)
 
 int Maze::MakeLegalBlock()
 {
-	vector<pair<int,int> > possible;
+	vector<pair<int,int> > possibleWrong;
+	vector<pair<int,int> > possibleCorrect;
 	pair<int,int> temp;
 	int randnum;
 	int i;
@@ -123,28 +120,28 @@ int Maze::MakeLegalBlock()
 	{
 		temp.first=wr-1;
 		temp.second=wc;
-		possible.push_back(temp);
+		possibleWrong.push_back(temp);
 	}
 	if(wc-1>=0 && IsPossibleBlock(wr,wc-1))
 	{
 		temp.first=wr;
 		temp.second=wc-1;
-		possible.push_back(temp);
+		possibleWrong.push_back(temp);
 	}
 	if(wr+1<r && IsPossibleBlock(wr+1,wc))
 	{
 		temp.first=wr+1;
 		temp.second=wc;
-		possible.push_back(temp);
+		possibleCorrect.push_back(temp);
 	}
 	if(wc+1<c && IsPossibleBlock(wr,wc+1))
 	{
 		temp.first=wr;
 		temp.second=wc+1;
-		possible.push_back(temp);
+		possibleCorrect.push_back(temp);
 	}
 
-	if(!possible.size())
+	if(!possibleWrong.size() && !possibleCorrect.size())
 	{
 		if(maxr>maxc)
 			for(i=c-1; i>=0; i--)
@@ -164,15 +161,38 @@ int Maze::MakeLegalBlock()
 					return MakeLegalBlock();
 				}
 		Restart();
-		fprintf(stderr,"error4,wr=%d,wc=%d\n",wr,wc);
-		Print();
-		exit(0);
+		return 1;
 	}
 
-	randnum = rand() % possible.size();
+	if(!possibleWrong.size())
+	{
+		randnum = rand() % possibleCorrect.size();
+		wr = possibleCorrect[randnum].first;
+		wc = possibleCorrect[randnum].second;
+	}
+	else if(!possibleCorrect.size())
+	{
+		randnum = rand() % possibleWrong.size();
+		wr = possibleWrong[randnum].first;
+		wc = possibleWrong[randnum].second;
+	}
+	else
+	{
+		randnum = rand() % 10;
+		if(randnum>2)
+		{
+			randnum = rand() % possibleWrong.size();
+			wr = possibleWrong[randnum].first;
+			wc = possibleWrong[randnum].second;
+		}
+		else
+		{
+			randnum = rand() % possibleCorrect.size();
+			wr = possibleCorrect[randnum].first;
+			wc = possibleCorrect[randnum].second;
+		}
+	}
 
-	wr = possible[randnum].first;
-	wc = possible[randnum].second;
 	maxr = max(maxr,wr);
 	maxc = max(maxc,wc);
 	board[wr][wc] = 1;
@@ -206,6 +226,38 @@ void Maze::Print()
 	}
 }
 
+void Maze::PrintForChris()
+{
+	int i,j;
+
+	printf("var maze_xs = ");
+	printf("[");
+	for(i=0; i<r; i++)
+		for(j=0; j<c; j++)
+			if(board[i][j])
+			{
+				printf(" %d",j);
+				if(i != r-1 || j != c-1)
+					printf(",");
+			}
+	printf(" ]; ");
+
+	printf("var maze_ys = ");
+	printf("[");
+	for(i=0; i<r; i++)
+		for(j=0; j<c; j++)
+			if(board[i][j])
+			{
+				printf(" %d",r-i-1);
+				if(i != r-1 || j != c-1)
+					printf(",");
+			}
+	printf(" ]; ");
+
+	printf("var boardWidth = %d; ",c);
+	printf("var boardHeight = %d;\n",r);
+}
+
 int main(int argc, char ** argv)
 {
 	Maze* maze;
@@ -223,7 +275,7 @@ int main(int argc, char ** argv)
 
 	maze->GenMaze();
 
-	maze->Print();
+	maze->PrintForChris();
 
 	return 0;
 }
