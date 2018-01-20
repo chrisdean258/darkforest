@@ -3,7 +3,7 @@ var arr = []
 function selectCallbackMove()
 {
 	arr.push(document.getElementById("moveSelect").value);
-	document.getElementById('RightHandCol').innerHTML = arr.join(""<br>"");
+	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }
 function selectCallbackIf()
 {
