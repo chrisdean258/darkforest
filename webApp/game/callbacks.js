@@ -32,7 +32,8 @@ function evaluate_arr(run=true)
 {
 	this.run = run;
 	try{
-		setTimeout(function(){eval(arr.join(""));}, 4500);
+		for(var i = 0; i < arr.length; i++)
+		setTimeout(function(){eval(arr[]);}, 4500);
 	}
 	catch(ex)
 	{
