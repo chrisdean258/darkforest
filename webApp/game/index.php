@@ -181,6 +181,7 @@ function selectCallbackDone()
 </div>
 <script>
 document.getElementById("doneSelect").addEventListener("select", selectCallbackDone);
+document.getElementById("doneSelect").addEventListener("select", function(){console.log("why");});
 document.getElementById("forSelect").addEventListener("select", selectCallbackFor);
 document.getElementById("whileSelect").addEventListener("select", selectCallbackWhile);
 document.getElementById("moveSelect").addEventListener("select", selectCallbackMove);
