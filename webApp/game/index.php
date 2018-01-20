@@ -86,7 +86,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 	  </select>
 			<button onclick="selectCallbackIf(); return false;"></button>
 	</td>
-    <td>placeholder1</td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -100,7 +100,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 	  </select>
 			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
-    <td>placeholder2</td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -129,13 +129,13 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 	  </select>
 			<button onclick="selectCallbackFor(); return false;"></button>
 	</td>
-    <td>placeholder3</td>
+    <td></td>
   </tr>
   <tr>
     <td>
 			<button onclick="selectCallbackDone(); return false;">end</button>
 	</td>
-    <td>placeholder4</td>
+    <td></td>
   </tr>
   <tr>
     <td>
