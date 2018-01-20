@@ -4,11 +4,13 @@
       border-radius: 0;
     }
   
+    /*Background solid color to match the darkest trees*/
     body {
      background-color: #222035; 
      background-size: cover;
     }
- 
+  
+    /*Button code, from the index.php page*/ 
 	.button {
     background-color: #575555; 
     border: none;
@@ -17,12 +19,14 @@
     text-decoration: none;
     display: initial;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 2px 1px;
     cursor: pointer;
 }
 
-.button1 {padding: 14px 40px;}
+.button1 {padding: 3px 10px;}
 
+
+/*Font information for 8bit font*/
 @font-face {
     font-family: myFirstFont;
     src: url(../fonts/ConnectionSerif.otf);
@@ -43,6 +47,8 @@ h3 {
     color:black;
 }
 
+
+/*CODE FOR THE SPLIT DIV*/
 .container {
     position: relative;
 }
@@ -57,8 +63,8 @@ h3 {
 }
 
 #wrapper {
-     width: 100%;
-     height: auto;
+     width: 98%;
+     height: 98%;
      margin: 0 auto;
 }
 #leftcolumn, #rightcolumn {
@@ -69,11 +75,25 @@ h3 {
 }
 #leftcolumn {
      width: 50%;
-     height: auto;
+     height: 98%;
      background-color: transparent;
 }
 #rightcolumn {
      width: 50%;
-     height: auto;
+     height: 98%;
      background-color: transparent;
 }
+
+/*CODE FOR THE TABLE*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
