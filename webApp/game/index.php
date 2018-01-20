@@ -53,9 +53,11 @@
       <div id="canvasparentdiv"></div>
       </center>
     </div>
+    <div id="rightcolumn">
        <table>
   <tr>
     <th>Commands</th>
+    <th>Your Code</th>
   </tr>
   <tr>
     <td>
@@ -69,6 +71,9 @@
 			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
 	<td><label id="RightHandCol"></label></td>
+<!--<script>
+document.getElementById('RightHandCol').innerHTML = arr[0];
+</script> -->
   </tr>
   <tr>
     <td>
@@ -81,7 +86,7 @@
 	  </select>
 			<button onclick="selectCallbackIf(); return false;"></button>
 	</td>
-	<td></td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -95,7 +100,7 @@
 	  </select>
 			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
-	<td></td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -124,12 +129,13 @@
 	  </select>
 			<button onclick="selectCallbackFor(); return false;"></button>
 	</td>
-	<td></td>
+    <td></td>
   </tr>
   <tr>
     <td>
 			<button onclick="selectCallbackDone(); return false;">end</button>
 	</td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -144,3 +150,4 @@
 </div>
 </body>
 </html>
+
