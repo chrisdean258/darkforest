@@ -5,14 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../indexPage/css/darkgame.css">
+  <link rel="stylesheet" type="text/css" href="../css/darkgame.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
 		<script>
 			<?php
-			echo exec("../mazegen/mazegen 30 30");
+			echo exec("/home/colin/darkforest/mazegen/mazegen 30 30");
 			?>
 			//var maze_xs = [ 1, 2, 3, 4, 5, 6, 7 ];
 			//var maze_ys = [ 1, 2, 3, 4, 5, 6, 7 ];
