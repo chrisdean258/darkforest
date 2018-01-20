@@ -23,7 +23,14 @@ function setup()
 	{
 		for(var j = 0; j < boardWidth; j++)
 		{
-			board[i].push(new Block(i, j, blockSize, "imgs/not_path.png"));
+			if(random() > .1)
+			{
+				board[i].push(new Block(i, j, blockSize, "imgs/not_path.png"));
+			}
+			else
+			{
+				board[i].push(new Block(i, j, blockSize, "imgs/not_path_fun.png"));
+			}
 		}
 	}
 
