@@ -87,13 +87,13 @@ function revealAll()
 
 function keyPressed()
 {
-	if (keyCode === LEFT_ARROW) {
+	if (keyCode === LEFT_ARROW || keyCode == "h") {
 		person.moveLeft(board);
-	} else if (keyCode === RIGHT_ARROW) {
+	} else if (keyCode === RIGHT_ARROW || keyCode == "l") {
 		person.moveRight(board);
-	} else if (keyCode === UP_ARROW) {
+	} else if (keyCode === UP_ARROW || keyCode == "k") {
 		person.moveUp(board);
-	} else if (keyCode === DOWN_ARROW) {
+	} else if (keyCode === DOWN_ARROW || keyCode == "j") {
 		person.moveDown(board);
 	}
 
