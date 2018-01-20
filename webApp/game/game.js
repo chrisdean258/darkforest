@@ -2,7 +2,7 @@ var canvas;
 var person;
 var board;
 
-var blockSize = 20;
+var blockSize = 600/boardHeight;
 
 function preload()
 {
