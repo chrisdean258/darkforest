@@ -1,11 +1,6 @@
 //mazegen.cpp
 
 
-
-
-//cmd arg for more or less legal squares
-
-
 #include <cstdio>
 #include <cstdlib>
 #include <vector>
