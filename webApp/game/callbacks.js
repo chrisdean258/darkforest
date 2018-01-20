@@ -14,6 +14,7 @@ function selectCallbackWhile()
 }
 function selectCallbackFor()
 {
+	console.log("Callback for");
 	if(this.initialvar == undefined) this.initialvar = [ "k" ];
 	var lc = document.getElementByID("forSelect").value;
 	var lv = this.initialvar.join("");
