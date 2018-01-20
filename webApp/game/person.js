@@ -9,7 +9,7 @@ function Person(x, y, blockSize, imageName)
 	{
 		push();
 		noStroke();
-		image(this.image, this.x*this.blockSize, this.y*this.blockSize, this.blockSize, this.blockSize)
+		image(this.image, this.x*this.blockSize, this.y*this.blockSize, this.blockSize, this.blockSize);
 		pop();
 	}
 
@@ -30,7 +30,7 @@ function Person(x, y, blockSize, imageName)
 
 	this.canMove_right = function()
 	{
-		return this.x < boardWidth;
+		return this.x < boardWidth-1;
 	}
 
 	this.moveRight = function(b)

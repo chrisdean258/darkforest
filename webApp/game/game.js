@@ -8,7 +8,7 @@ function preload()
 {
 	board = [];
 	for(var i = 0; i < boardHeight; i++) board.push([]);
-	person = new Person(0, boardHeight-1, blockSize, "friend2.png");
+	person = new Person(0, boardHeight-1, blockSize, "friend.png");
 }
 
 function setup()
