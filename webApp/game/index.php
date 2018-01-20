@@ -23,6 +23,7 @@
 		<script src="block.js"></script>
 		<script src="person.js"></script>
 		<script src="game.js"></script>
+		<script src="callbacks.js"></script>
 
 </head>
 <body>
@@ -33,7 +34,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">dark forest</a>
     </div>
@@ -65,75 +66,75 @@
   </tr>
   <tr>
     <td>
-      <select class="ui search dropdown">
+      <select id="moveSelect" class="ui search dropdown" onselect="selectCallbackMove()">
 	    <option value="" selected disabled hidden>move</option>
-	    <option value="1">move up</option>
-	    <option value="2">move left</option>
-	    <option value="3">move right</option>
-	    <option value="4">move down</option>
+	    <option value="move up">move up</option>
+	    <option value="move left">move left</option>
+	    <option value="move right">move right</option>
+	    <option value="move down">move down</option>
       </select>
     </td>
-    <td>Maria Anders</td>
+    <td>placeholder0</td>
   </tr>
   <tr>
     <td>
-	  <select class="ui search dropdown">
+	  <select id="ifSelect" class="ui search dropdown" onselect="selectCallbackIf()">
 	    <option value="" selected disabled hidden>if</option>
-		<option value="1">if can move up</option>
-		<option value="2">if can move left</option>
-		<option value="3">if can move right</option>
-		<option value="4">if can move down</option>
+		<option value="if can move up">if can move up</option>
+		<option value="if can move left">if can move left</option>
+		<option value="if can move right">if can move right</option>
+		<option value="if can move down">if can move down</option>
 	  </select>
 	</td>
-    <td>Francisco Chang</td>
+    <td>placeholder1</td>
   </tr>
   <tr>
     <td>
-	  <select class="ui search dropdown">
+	  <select id="whileSelect" class="ui search dropdown" onselect="selectCallbackWhile()">
 	    <option value="" selected disabled hidden>while</option>
-		<option value="1">while can move up</option>
-		<option value="2">while can move left</option>
-		<option value="3">while can move right</option>
-		<option value="4">while can move down</option>
+		<option value="while can move up">while can move up</option>
+		<option value="while can move left">while can move left</option>
+		<option value="while can move right">while can move right</option>
+		<option value="while can move down">while can move down</option>
 	  </select>
 	</td>
-    <td>Roland Mendel</td>
+    <td>placeholder2</td>
   </tr>
   <tr>
     <td>
-	  <select class="ui search dropdown">
+	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor()">
 	    <option value="" selected disabled hidden>for</option>
-		<option value="1">for 1 step</option>
-		<option value="2">for 2 steps</option>
-		<option value="3">for 3 steps</option>
-		<option value="4">for 4 steps</option>
-		<option value="5">for 5 steps</option>
-		<option value="6">for 6 steps</option>
-		<option value="7">for 7 steps</option>
-		<option value="8">for 8 steps</option>
-		<option value="9">for 9 steps</option>
-		<option value="10">for 10 steps</option>
-		<option value="11">for 11 steps</option>
-		<option value="12">for 12 steps</option>
-		<option value="13">for 13 steps</option>
-		<option value="14">for 14 steps</option>
-		<option value="15">for 15 steps</option>
-		<option value="16">for 16 steps</option>
-		<option value="17">for 17 steps</option>
-		<option value="18">for 18 steps</option>
-		<option value="19">for 19 steps</option>
-		<option value="20">for 20 steps</option>
+		<option value="for 1 step">for 1 step</option>
+		<option value="for 2 steps">for 2 steps</option>
+		<option value="for 3 steps">for 3 steps</option>
+		<option value="for 4 steps">for 4 steps</option>
+		<option value="for 5 steps">for 5 steps</option>
+		<option value="for 6 steps">for 6 steps</option>
+		<option value="for 7 steps">for 7 steps</option>
+		<option value="for 8 steps">for 8 steps</option>
+		<option value="for 9 steps">for 9 steps</option>
+		<option value="for 10 steps">for 10 steps</option>
+		<option value="for 11 steps">for 11 steps</option>
+		<option value="for 12 steps">for 12 steps</option>
+		<option value="for 13 steps">for 13 steps</option>
+		<option value="for 14 steps">for 14 steps</option>
+		<option value="for 15 steps">for 15 steps</option>
+		<option value="for 16 steps">for 16 steps</option>
+		<option value="for 17 steps">for 17 steps</option>
+		<option value="for 18 steps">for 18 steps</option>
+		<option value="for 19 steps">for 19 steps</option>
+		<option value="for 20 steps">for 20 steps</option>
 	  </select>
 	</td>
-    <td>Helen Bennett</td>
+    <td>placeholder3</td>
   </tr>
   <tr>
     <td>
-	  <select class="ui search dropdown">
-	    <option value="">done</option>
+	  <select id="doneSelect" class="ui search dropdown" onselect="selectCallbackDone()">
+	    <option value="done">done</option>
 	  </select>
 	</td>
-    <td>Yoshi Tannamuri</td>
+    <td>placeholder4</td>
   </tr>
   <tr>
     <td>
