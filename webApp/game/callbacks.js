@@ -3,17 +3,17 @@ var arr = []
 function selectCallbackMove()
 {
 	arr.push(document.getElementById("moveSelect").value);
-	document.getElementById('RightHandCol').textContent = arr.join(<br>);
+	document.getElementById('RightHandCol').textContent = arr.join(""<br>"");
 }
 function selectCallbackIf()
 {
 	arr.push(document.getElementById("ifSelect").value);
-	document.getElementById('RightHandCol').textContent = arr.join(<br>);
+	document.getElementById('RightHandCol').textContent = arr.join("<br>");
 }
 function selectCallbackWhile()
 {
 	arr.push(document.getElementById("whileSelect").value);
-	document.getElementById('RightHandCol').textContent = arr.join(<br>);
+	document.getElementById('RightHandCol').textContent = arr.join("<br>");
 }
 function selectCallbackFor()
 {
@@ -24,12 +24,12 @@ function selectCallbackFor()
 	arr.push("for(var " + lv + " = 0; " + lv + " < " + lc + " ; " + lv + "++){");
 
 	this.initialvar.push("j");
-	document.getElementById('RightHandCol').textContent = arr.join(<br>);
+	document.getElementById('RightHandCol').textContent = arr.join("<br>");
 }
 function selectCallbackDone()
 {
 	arr.push("}");
-	document.getElementById('RightHandCol').textContent = arr.join(<br>);
+	document.getElementById('RightHandCol').textContent = arr.join("<br>");
 }
 
 
