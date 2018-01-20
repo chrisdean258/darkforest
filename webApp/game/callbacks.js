@@ -32,11 +32,11 @@ function evaluate_arr(run=true)
 {
 	this.run = run;
 	try{
-		for(var i = 0; i < arr.length; i++)
-		setTimeout(function(){eval(arr[i]);}, 4500);
+		setTimeout(function(){eval(arr.join(""));}, 4500);
 	}
 	catch(ex)
 	{
+		console.log("bad code");
 		person.x = 0;
 		person.y = boardHeight-1;
 	}
