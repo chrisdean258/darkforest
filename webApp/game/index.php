@@ -96,6 +96,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
 		<option value="while(person.canMove_left()){">while can move left</option>
 		<option value="while(person.canMove_right()){">while can move right</option>
 		<option value="while(person.canMove_down()){">while can move down</option>
+		<option value="while(true){">forever</option>
 	  </select>
 			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
@@ -132,7 +133,7 @@ document.getElementById('RightHandCol').innerHTML = arr[0];
   </tr>
   <tr>
     <td>
-			<button onclick="selectCallbackDone(); return false;">add</button>
+			<button onclick="selectCallbackDone(); return false;">end</button>
 	</td>
     <td>placeholder4</td>
   </tr>
