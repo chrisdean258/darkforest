@@ -13,29 +13,29 @@ function Person(x, y, blockSize, imageName)
 		pop();
 	}
 
-	this.canMove_up = function(b)
+	this.canMove_up = function()
 	{
-		return this.y > 0 && b[this.x][this.y-1].isPath;
+		return this.y > 0;
 	}
 
-	this.canMove_down = function(b)
+	this.canMove_down = function()
 	{
-		return this.y < boardHeight-1 && b[this.x][this.y+1].isPath;
+		return this.y < boardHeight-1;
 	}
 
-	this.canMove_left = function(b)
+	this.canMove_left = function()
 	{
-		return this.x > 0 && b[this.x-1][this.y].isPath;
+		return this.x > 0;
 	}
 
-	this.canMove_right = function(b)
+	this.canMove_right = function()
 	{
-		return this.x < boardWidth-1 && b[this.x+1][this.y].isPath;
+		return this.x < boardWidth-1;
 	}
 
 	this.moveRight = function(b)
 	{
-		if(this.canMove_right(b))
+		if(this.canMove_right())
 		{
 			this.x++;
 			try { b[this.x+1][this.y-1].visible = true; } catch(ex){}
@@ -46,7 +46,7 @@ function Person(x, y, blockSize, imageName)
 
 	this.moveLeft = function(b)
 	{
-		if(this.canMove_left(b))
+		if(this.canMove_left())
 		{
 			this.x--;
 			try { b[this.x-1][this.y-1].visible = true; } catch(ex){}
@@ -57,18 +57,18 @@ function Person(x, y, blockSize, imageName)
 
 	this.moveUp = function(b)
 	{
-		if(this.canMove_up(b))
+		if(this.canMove_up())
 		{
 			this.y--;
 			try { b[this.x-1][this.y-1].visible = true; } catch(ex){}
 			try { b[this.x-0][this.y-1].visible = true; } catch(ex){}
 			try { b[this.x+1][this.y-1].visible = true; } catch(ex){}
 		}
-	};
+	}
 
 	this.moveDown = function(b)
 	{
-		if(this.canMove_down(b))
+		if(this.canMove_down())
 		{
 			this.y++;
 			try { b[this.x-1][this.y+1].visible = true; } catch(ex){}
