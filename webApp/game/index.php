@@ -22,6 +22,7 @@
 		<script src="callbacks.js"></script>
 <script>
 
+
 var arr = []
 
 function selectCallbackMove()
@@ -53,6 +54,11 @@ function selectCallbackDone()
 	for(var i = 0; i<arr.length; i++)
 		console.log(arr[i]);
 }
+
+document.getElementByID("doneSelect").addEventListener("select", selectCallbackDone);
+document.getElementByID("forSelect").addEventListener("select", selectCallbackFor);
+document.getElementByID("whileSelect").addEventListener("select", selectCallbackWhile);
+document.getElementByID("moveSelect").addEventListener("select", selectCallbackMove);
 
 </script>
 </head>
