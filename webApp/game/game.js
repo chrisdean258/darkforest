@@ -8,8 +8,7 @@ function preload()
 {
 	board = [];
 	for(var i = 0; i < boardHeight; i++) board.push([]);
-	person = new Person(0, boardHeight-1, blockSize, "imgs/friend.png");
-}
+	person = new Person(0, boardHeight-1, blockSize, "imgs/friend.png"); }
 
 function setup()
 {
@@ -45,7 +44,6 @@ function setup()
 	board[person.x+1][person.y].visible = true;
 	board[person.x][person.y].visible = true;
 
-	//board[boardWidth-1][0].color = "#355c3d";
 	board[boardWidth-1][0].visible = true;
 
 }

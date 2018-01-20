@@ -6,6 +6,7 @@ function Block(x, y, size, img)
 	this.y = y;
 	this.visible = false;
 	this.image = loadImage(img);
+	this.isPath = false;
 
 	this.show = function()
 	{
