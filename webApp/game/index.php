@@ -101,25 +101,25 @@
 	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor()">
 	    <option value="" selected disabled>for</option>
 		<option value="1">for 1 step</option>
-		<option value="2">for 2</option>
-		<option value="3">for 3</option>
-		<option value="4">for 4</option>
-		<option value="5">for 5</option>
-		<option value="6">for 6</option>
-		<option value="7">for 7</option>
-		<option value="8">for 8</option>
-		<option value="9">for 9</option>
-		<option value="10">for 10</option>
-		<option value="11">for 11</option>
-		<option value="12">for 12</option>
-		<option value="13">for 13</option>
-		<option value="14">for 14</option>
-		<option value="15">for 15</option>
-		<option value="16">for 16</option>
-		<option value="17">for 17</option>
-		<option value="18">for 18</option>
-		<option value="19">for 19</option>
-		<option value="20">for 20</option>
+		<option value="2">for 2 steps</option>
+		<option value="3">for 3 steps</option>
+		<option value="4">for 4 steps</option>
+		<option value="5">for 5 steps</option>
+		<option value="6">for 6 steps</option>
+		<option value="7">for 7 steps</option>
+		<option value="8">for 8 steps</option>
+		<option value="9">for 9 steps</option>
+		<option value="10">for 10 steps</option>
+		<option value="11">for 11 steps</option>
+		<option value="12">for 12 steps</option>
+		<option value="13">for 13 steps</option>
+		<option value="14">for 14 steps</option>
+		<option value="15">for 15 steps</option>
+		<option value="16">for 16 steps</option>
+		<option value="17">for 17 steps</option>
+		<option value="18">for 18 steps</option>
+		<option value="19">for 19 steps</option>
+		<option value="20">for 20 steps</option>
 	  </select>
 	</td>
     <td>placeholder3</td>
