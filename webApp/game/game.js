@@ -2,7 +2,7 @@ var canvas;
 var person;
 var board;
 
-var blockSize = 20;
+var blockSize = 600/boardHeight;
 
 function preload()
 {
@@ -75,9 +75,9 @@ function draw()
 
 function revealAll()
 {
-	for(var i = 0; i < 30; i++)
+	for(var i = 0; i < boardWidth; i++)
 	{
-		for(var j = 0; j < 30; j++)
+		for(var j = 0; j < boardHeight; j++)
 		{
 			board[i][j].visible = true;
 		}
@@ -87,13 +87,13 @@ function revealAll()
 
 function keyPressed()
 {
-	if (keyCode === LEFT_ARROW) {
+	if (keyCode === LEFT_ARROW || keyCode == 72) {
 		person.moveLeft(board);
-	} else if (keyCode === RIGHT_ARROW) {
+	} else if (keyCode === RIGHT_ARROW || keyCode == 76) {
 		person.moveRight(board);
-	} else if (keyCode === UP_ARROW) {
+	} else if (keyCode === UP_ARROW || keyCode == 75) {
 		person.moveUp(board);
-	} else if (keyCode === DOWN_ARROW) {
+	} else if (keyCode === DOWN_ARROW || keyCode == 74) {
 		person.moveDown(board);
 	}
 

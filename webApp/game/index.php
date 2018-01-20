@@ -53,7 +53,9 @@
 <br>
   <div id="wrapper">
     <div id="leftcolumn">
+      <center>
       <div id="canvasparentdiv"></div>
+      </center>
     </div>
     <div id="rightcolumn">
        <table>
