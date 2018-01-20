@@ -129,8 +129,7 @@
   </tr>
   <tr>
     <td>
-	  <select id="doneSelect" class="ui search dropdown" onchange="selectCallbackDone">
-	    <option value="done">done</option>
+			<input type="button" onclick="selectCallbackDone"></input>
 	  </select>
 	</td>
     <td>placeholder4</td>

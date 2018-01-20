@@ -25,7 +25,7 @@ function selectCallbackFor()
 }
 function selectCallbackDone()
 {
-	arr.push(document.getElementById("doneSelect").value);
+	arr.push("}");
 	for(var i = 0; i<arr.length; i++)
 		console.log(arr[i]);
 }
