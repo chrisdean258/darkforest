@@ -14,7 +14,6 @@ function selectCallbackWhile()
 }
 function selectCallbackFor()
 {
-	console.log("Callback for");
 	if(this.initialvar == undefined) this.initialvar = [ "k" ];
 	var lc = document.getElementById("forSelect").value;
 	var lv = this.initialvar.join("");
@@ -26,6 +25,18 @@ function selectCallbackFor()
 function selectCallbackDone()
 {
 	arr.push("}");
-	for(var i = 0; i<arr.length; i++)
-		console.log(arr[i]);
+}
+
+
+function evaluate_arr(run=true)
+{
+	this.run = run;
+	try{
+		setTimeout(function(){eval(arr.join(""));}, 4500);
+	}
+	catch(ex)
+	{
+		person.x = 0;
+		person.y = boardHeight-1;
+	}
 }

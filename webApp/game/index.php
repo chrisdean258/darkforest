@@ -135,7 +135,7 @@
   </tr>
   <tr>
     <td>
-      <button class="button button1" style="margin-right: 50px"><h3>start</h3></button>
+      <button class="button button1" style="margin-right: 50px" onclick="evaluate_arr();return false;"><h3>start</h3></button>
     </td>
     <td>
       <button class="button button1" style="margin-left: 50px"><h3>stop</h3></button>
