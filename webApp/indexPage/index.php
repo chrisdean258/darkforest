@@ -164,8 +164,8 @@ span.psw {
   <br>
   <h1>dark forest:</h1>
   <h2>a programming adventure</h2>
-  <button class="button button1" style="margin-right: 50px" onclick="document.getElementbyId('id01').style.display='block'" style="width:auto;"><h3>start</h3></button>
-<!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>-->
+ <!-- <button class="button button1" style="margin-right: 50px" onclick="document.getElementbyId('id01').style.display='block'" style="width:auto;"><h3>start</h3></button>-->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
   <button class="button button1" style="margin-left: 50px"><h3>register</h3></button>
 </div>
 
