@@ -64,10 +64,10 @@
     <td>
       <select id="moveSelect" class="ui search dropdown" onselect="selectCallbackMove()">
 	    <option value="" selected disabled>move</option>
-	    <option value="move up">move up</option>
-	    <option value="move left">move left</option>
-	    <option value="move right">move right</option>
-	    <option value="move down">move down</option>
+	    <option value="person.moveUp(board);">move up</option>
+	    <option value="person.moveLeft(board);">move left</option>
+	    <option value="person.moveRight(board);">move right</option>
+	    <option value="person.moveDown(board);">move down</option>
       </select>
     </td>
     <td>placeholder0</td>
@@ -76,10 +76,10 @@
     <td>
 	  <select id="ifSelect" class="ui search dropdown" onselect="selectCallbackIf()">
 	    <option value="" selected disabled>if</option>
-		<option value="if can move up">if can move up</option>
-		<option value="if can move left">if can move left</option>
-		<option value="if can move right">if can move right</option>
-		<option value="if can move down">if can move down</option>
+		<option value="if(person.canMove_up(board)){">if can move up</option>
+		<option value="if(person.canMove_left(board)){">if can move left</option>
+		<option value="if(person.canMove_right(board)){">if can move right</option>
+		<option value="if(person.canMove_down(board)){">if can move down</option>
 	  </select>
 	</td>
     <td>placeholder1</td>
@@ -88,10 +88,10 @@
     <td>
 	  <select id="whileSelect" class="ui search dropdown" onselect="selectCallbackWhile()">
 	    <option value="" selected disabled>while</option>
-		<option value="while can move up">while can move up</option>
-		<option value="while can move left">while can move left</option>
-		<option value="while can move right">while can move right</option>
-		<option value="while can move down">while can move down</option>
+		<option value="while(person.canMove_up()){">while can move up</option>
+		<option value="while(person.canMove_left()){">while can move left</option>
+		<option value="while(person.canMove_right()){">while can move right</option>
+		<option value="while(person.canMove_down()){">while can move down</option>
 	  </select>
 	</td>
     <td>placeholder2</td>
@@ -100,26 +100,26 @@
     <td>
 	  <select id="forSelect" class="ui search dropdown" onselect="selectCallbackFor()">
 	    <option value="" selected disabled>for</option>
-		<option value="for 1 step">for 1 step</option>
-		<option value="for 2 steps">for 2 steps</option>
-		<option value="for 3 steps">for 3 steps</option>
-		<option value="for 4 steps">for 4 steps</option>
-		<option value="for 5 steps">for 5 steps</option>
-		<option value="for 6 steps">for 6 steps</option>
-		<option value="for 7 steps">for 7 steps</option>
-		<option value="for 8 steps">for 8 steps</option>
-		<option value="for 9 steps">for 9 steps</option>
-		<option value="for 10 steps">for 10 steps</option>
-		<option value="for 11 steps">for 11 steps</option>
-		<option value="for 12 steps">for 12 steps</option>
-		<option value="for 13 steps">for 13 steps</option>
-		<option value="for 14 steps">for 14 steps</option>
-		<option value="for 15 steps">for 15 steps</option>
-		<option value="for 16 steps">for 16 steps</option>
-		<option value="for 17 steps">for 17 steps</option>
-		<option value="for 18 steps">for 18 steps</option>
-		<option value="for 19 steps">for 19 steps</option>
-		<option value="for 20 steps">for 20 steps</option>
+		<option value="1">for 1 step</option>
+		<option value="2">for 2</option>
+		<option value="3">for 3</option>
+		<option value="4">for 4</option>
+		<option value="5">for 5</option>
+		<option value="6">for 6</option>
+		<option value="7">for 7</option>
+		<option value="8">for 8</option>
+		<option value="9">for 9</option>
+		<option value="10">for 10</option>
+		<option value="11">for 11</option>
+		<option value="12">for 12</option>
+		<option value="13">for 13</option>
+		<option value="14">for 14</option>
+		<option value="15">for 15</option>
+		<option value="16">for 16</option>
+		<option value="17">for 17</option>
+		<option value="18">for 18</option>
+		<option value="19">for 19</option>
+		<option value="20">for 20</option>
 	  </select>
 	</td>
     <td>placeholder3</td>

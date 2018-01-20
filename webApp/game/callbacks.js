@@ -14,7 +14,13 @@ function selectCallbackWhile()
 }
 function selectCallbackFor()
 {
-	arr.push(document.getElementByID("forSelect").value);
+	if(this.initialvar == undefined) this.initialvar = [ "k" ];
+	var lc = document.getElementByID("forSelect").value;
+	var lv = this.initialvar.join("");
+
+	arr.push("for(var " + lv + " = 0; " + lv + " < " + lc + " ; " + lv + "++){");
+
+	this.initialvar.push("j");
 }
 function selectCallbackDone()
 {
