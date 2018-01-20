@@ -60,7 +60,7 @@ function Person(x, y, blockSize, imageName)
 		var newy = this.y-1;
 		if(this.canMove_up(b))
 		{
-			while(this.y > newy) this.y -= .0000001;
+			while(this.y > newy) this.y -= .00000000001;
 			this.y = newy;
 			try { b[this.x-1][this.y-1].visible = true; } catch(ex){}
 			try { b[this.x-0][this.y-1].visible = true; } catch(ex){}
