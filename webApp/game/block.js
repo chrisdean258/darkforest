@@ -1,4 +1,4 @@
-function Block(x, y, size, picture, visible = false)
+function Block(x, y, size, picture)
 {
 	this.size = size;
 	this.color = color;
@@ -6,6 +6,7 @@ function Block(x, y, size, picture, visible = false)
 	this.y = y;
 	this.visible = false;
 	this.image = loadImage(picture);
+	this.isPath = false;
 
 
 	this.show = function()
