@@ -68,7 +68,7 @@
 	    <option value="person.moveRight(board);">move right</option>
 	    <option value="person.moveDown(board);">move down</option>
       </select>
-			<button onclick="selectCallbackMove"></button>
+			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
     <td>placeholder0</td>
   </tr>
@@ -129,7 +129,7 @@
   </tr>
   <tr>
     <td>
-			<button onclick="selectCallbackDone">add</button>
+			<button onclick="selectCallbackDone(); return false;">add</button>
 	</td>
     <td>placeholder4</td>
   </tr>
