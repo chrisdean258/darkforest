@@ -5,19 +5,12 @@
     }
   
     body {
-     background: url(../imgs/forest.jpg) no-repeat center fixed; 
+     background-color: #222035; 
      background-size: cover;
     }
  
-     
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  
 	.button {
-    background-color: #575555; /* Green */
+    background-color: #575555; 
     border: none;
     color: black;
     text-align: center;
@@ -63,4 +56,24 @@ h3 {
     font-size: 18px;
 }
 
-
+#wrapper {
+     width: 100%;
+     height: auto;
+     margin: 0 auto;
+}
+#leftcolumn, #rightcolumn {
+    border: 1px solid white;
+    float: left;
+    min-height: 50%;
+    color: white;
+}
+#leftcolumn {
+     width: 50%;
+     height: auto;
+     background-color: transparent;
+}
+#rightcolumn {
+     width: 50%;
+     height: auto;
+     background-color: transparent;
+}

@@ -5,9 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/darkmain.css">
+  <link rel="stylesheet" type="text/css" href="../working/css/darkgame.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+		<script>
+			var maze_xs = [ 1, 2, 3, 4, 5, 6, 7 ];
+			var maze_ys = [ 1, 2, 3, 4, 5, 6, 7 ];
+			var boardWidth = 30;
+			var boardHeight = 30;
+		</script>
+		<script src="block.js"></script>
+		<script src="person.js"></script>
+		<script src="game.js"></script>
+
 </head>
 <body>
 
@@ -34,12 +46,14 @@
     </div>
   </div>
 </nav>
-<div class="center">
-  <br>
-  <h1>dark forest:</h1>
-  <h2>a programming adventure</h2>
-  <button class="button button1" style="margin-right: 50px"><h3>start</h3></button>
-  <button class="button button1" style="margin-left: 50px"><h3>register</h3></button>
+<br>
+  <div id="wrapper">
+    <div id="leftcolumn">
+      <div id="canvasparentdiv"></div>
+    </div>
+    <div id="rightcolumn">
+       <center> Right</center>
+    </div>
 </div>
 </body>
 </html>
