@@ -49,6 +49,6 @@ function evaluate_arr(run=true)
 
 function clear_arr()
 {
-	arr = ar[];
+	arr = [];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }

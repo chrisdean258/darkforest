@@ -137,7 +137,7 @@
   </tr>
   <tr>
   	<td>
-      <button class="button button2" style="margin-right: 50px" onclick="clear_arr();return false;"><h3>clear<br>code</h3></button>
+      <button class="button button1" style="margin-right: 50px" onclick="clear_arr();return false;"><h3>clear<br>code</h3></button>
 	</td>
   </tr>
 </table>
