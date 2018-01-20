@@ -104,31 +104,35 @@
 	  <select class="ui search dropdown">
 	    <option value="" selected disabled hidden>for</option>
 		<option value="1">for 1 step</option>
-		<option value="2">for 2 step</option>
-		<option value="3">for 3 step</option>
-		<option value="4">for 4 step</option>
-		<option value="5">for 5 step</option>
-		<option value="6">for 6 step</option>
-		<option value="7">for 7 step</option>
-		<option value="8">for 8 step</option>
-		<option value="9">for 9 step</option>
-		<option value="10">for 10 step</option>
-		<option value="11">for 11 step</option>
-		<option value="12">for 12 step</option>
-		<option value="13">for 13 step</option>
-		<option value="14">for 14 step</option>
-		<option value="15">for 15 step</option>
-		<option value="16">for 16 step</option>
-		<option value="17">for 17 step</option>
-		<option value="18">for 18 step</option>
-		<option value="19">for 19 step</option>
-		<option value="20">for 20 step</option>
+		<option value="2">for 2 steps</option>
+		<option value="3">for 3 steps</option>
+		<option value="4">for 4 steps</option>
+		<option value="5">for 5 steps</option>
+		<option value="6">for 6 steps</option>
+		<option value="7">for 7 steps</option>
+		<option value="8">for 8 steps</option>
+		<option value="9">for 9 steps</option>
+		<option value="10">for 10 steps</option>
+		<option value="11">for 11 steps</option>
+		<option value="12">for 12 steps</option>
+		<option value="13">for 13 steps</option>
+		<option value="14">for 14 steps</option>
+		<option value="15">for 15 steps</option>
+		<option value="16">for 16 steps</option>
+		<option value="17">for 17 steps</option>
+		<option value="18">for 18 steps</option>
+		<option value="19">for 19 steps</option>
+		<option value="20">for 20 steps</option>
 	  </select>
 	</td>
     <td>Helen Bennett</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
+    <td>
+	  <select class="ui search dropdown">
+	    <option value="">done</option>
+	  </select>
+	</td>
     <td>Yoshi Tannamuri</td>
   </tr>
   <tr>
