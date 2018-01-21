@@ -62,8 +62,7 @@ function evaluate_arr()
 	}
 	catch(ex)
 	{
-		console.log(ex);
-		alert("Could not interpret your code.\n");
+		alert(ex);
 		person.reset();
 	}
 }
