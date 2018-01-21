@@ -59,7 +59,7 @@
   				<center><button class="button button1" href="#"><h3>35x35</h3></button></center>
 				
 		
-				<form action="http://darkforest.net/game/index.php">
+				<form action="http://google.com">
     					<input type="submit" value="Go to Google" />
 				</form>
 			
