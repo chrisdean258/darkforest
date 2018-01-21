@@ -74,7 +74,7 @@ function draw()
 
 	if(person.x === boardWidth-1 && person.y === 0)
 	{
-		var stats;
+		var stats = {};
 		stats.moves = person.nummoves;
 		stats.numcommands = arr.len;
 		stats.time = Date.now() - start / 1000;
