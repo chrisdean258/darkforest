@@ -77,11 +77,12 @@ function draw()
 		this.alerted = true;
 		var stats = {};
 		stats.moves = person.nummoves;
-		stats.numcommands = arr.len;
+		stats.numcommands = arr.length;
 		stats.time = Math.floor((Date.now() - start) / 1000);
 		stats.level = boardHeight;
 
 		alert("Congratuations. You took " + stats.time + " seconds to solve level " + (boardHeight-9) + ". Additionally you used " + stats.moves + " moves and used " + stats.numcommands + " commands.");
+		location.reload();
 	}
 }
 
