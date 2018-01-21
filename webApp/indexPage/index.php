@@ -28,13 +28,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">How to play</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Stats</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="howto.php">How to play</a></li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -44,34 +40,41 @@
   <h1>dark forest:</h1>
   <h2>a programming adventure</h2>
 <!--  <button class="button button1" style="margin-right: 50px" onclick="document.getElementbyId('id01').style.display='block'" style="width:auto;"><h3>start</h3></button>-->
-  <button class="button button1" style="margin-right: 50px" href="#" data-toggle="modal" data-target="#login-modal"> <h3>start</h3></button>
-  <button class="button button1" style="margin-left: 50px"><h3>register</h3></button>
+  <center><button class="button button1" href="#" data-toggle="modal" data-target="#login-modal"> <h3>start</h3></button></center>
 </div>
 
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
-					<h1>Login to Your Account</h1><br>
-				  <form id="loginForm" method="post" action="auth.php">
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
-					<input type="button" value="Login" class="login loginmodal-submit" onclick="loginValidate()">
+					<h1>Pick your forest map!</h1><br>
+				  <form id="loginForm" method="post" action="">
+					<!--<input type="text" name="playerName" placeholder="Username">-->
+					<!--<input type="password" name="pass2" placeholder="Password">-->
+					
+  				<center><button class="button button1" href="10index.php"><h3>10x10</h3></button></center>
+  				<center><button class="button button1" href="#"><h3>15x15</h3></button></center>
+  				<center><button class="button button1" href="#"><h3>20x20</h3></button></center>
+  				<center><button class="button button1" href="#"><h3>25x25</h3></button></center>
+  				<center><button class="button button1" href="game/index.php"><h3>30x30</h3></button></center>
+  				<center><button class="button button1" href="#"><h3>35x35</h3></button></center>
+				
+		
+				<form action="http://darkforest.net/game/index.php">
+    					<input type="submit" value="Go to Google" />
+				</form>
+			
+				<!--<input type="submit" value="login" class="login loginmodal-submit" onclick="loginValidate()">-->
 				<!--	<input type="submit" name="login" class="login loginmodal-submit" value="Login">-->
 				  </form>
-					
-				  <div class="login-help">
-					<a href="#">Register</a> - <a href="#">Forgot Password</a>
-				  </div>
 				</div>
 			</div>
 		  </div>
 
-<script>
+<!--<script>
 	function loginValidate(){
  	  document.getElementById("loginForm").submit();
-	  alert("loginValidate was called");
 	}
-</script>
+<script>-->
 
 </body>
 </html>
