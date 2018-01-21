@@ -88,10 +88,10 @@
     <td>
 	  <select id="whileSelect" class="ui search dropdown">
 	    <option value="" selected disabled>while</option>
-		<option value="while(person.canMove_up()){">while can move up</option>
-		<option value="while(person.canMove_left()){">while can move left</option>
-		<option value="while(person.canMove_right()){">while can move right</option>
-		<option value="while(person.canMove_down()){">while can move down</option>
+		<option value="while(person.canMove_up(board)){">while can move up</option>
+		<option value="while(person.canMove_left(board)){">while can move left</option>
+		<option value="while(person.canMove_right(board)){">while can move right</option>
+		<option value="while(person.canMove_down(board)){">while can move down</option>
 	  </select>
 			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
