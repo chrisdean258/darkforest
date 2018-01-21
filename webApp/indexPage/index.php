@@ -59,10 +59,11 @@
   				<center><button class="button button1" href="#"><h3>35x35</h3></button></center>
 				
 		
-				<form action="http://google.com">
+				<a href="http://google.com" class="button button1">Go to Google</a>
+<!--				<form action="http://google.com">
     					<input type="submit" value="Go to Google" />
 				</form>
-			
+	-->		
 				<!--<input type="submit" value="login" class="login loginmodal-submit" onclick="loginValidate()">-->
 				<!--	<input type="submit" name="login" class="login loginmodal-submit" value="Login">-->
 				  </form>
