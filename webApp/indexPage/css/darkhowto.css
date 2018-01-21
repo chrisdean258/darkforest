@@ -1,0 +1,69 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+  
+    body {
+     background: url(../imgs/darkerforest.png) no-repeat center fixed; 
+     background-size: cover;
+    }
+ 
+     
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  
+	.button {
+    background-color: #575555; /* Green */
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: initial;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ConnectionSerif.otf);
+}
+h1 {
+    font-family: myFirstFont;
+    font-size: 80px;
+    color:#990b0b;
+}
+h2 {
+    font-family: myFirstFont;
+    font-size: 40px;
+    color:#990b0b;
+}
+h3 {
+    font-family: myFirstFont;
+    font-size: 20px;
+    color:black;
+}
+p {
+    font-family: myFirstFont;
+    font-size: 14==px;
+    color:white;
+}
+
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
