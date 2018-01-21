@@ -5,14 +5,14 @@ function selectCallbackMove()
 {
 	arr.push(document.getElementById("moveSelect").value);
 	for(var i = 0; i < numBraces; i++)
-		arr[arr.length-1] = "&nbsp;" + arr[arr.length-1];
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }
 function selectCallbackIf()
 {
 	arr.push(document.getElementById("ifSelect").value);
 	for(var i = 0; i < numBraces; i++)
-		arr[arr.length-1] = "&nbsp;" + arr[arr.length-1];
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 	numBraces++;
 }
@@ -20,7 +20,7 @@ function selectCallbackWhile()
 {
 	arr.push(document.getElementById("whileSelect").value);
 	for(var i = 0; i < numBraces; i++)
-		arr[arr.length-1] = "&nbsp;" + arr[arr.length-1];
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 	numBraces++;
 }
@@ -34,7 +34,7 @@ function selectCallbackFor()
 
 	this.initialvar.push("j");
 	for(var i = 0; i < numBraces; i++)
-		arr[arr.length-1] = "&nbsp;" + arr[arr.length-1];
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 	numBraces++;
 }
@@ -43,7 +43,7 @@ function selectCallbackDone()
 	arr.push("}");
 	numBraces--;
 	for(var i = 0; i < numBraces; i++)
-		arr[arr.length-1] = "&nbsp;" + arr[arr.length-1];
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }
 
