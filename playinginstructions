@@ -1,0 +1,29 @@
+object: to get yourself from the bottom-left corner to the
+top-right corner of the board as quickly and with as
+few walks as possible. Instead of using arrow keys, though,
+you have to write code to walk.
+
+You have different kinds of commands available.
+
+You can:
+	Move one space in any direction.
+		Ex: move right
+	Move only if it's possible.
+		Ex: if can move up, move up
+	Move for as long as possible
+		Ex: while can move down, move down
+	Move for a certain amount of steps
+		Ex: for 6 steps, move down
+
+
+You can string together a lot of paths into one walk
+so that you take fewer walks.
+For example: for 6 steps, move up. if can move left, move left.
+But be careful! If you try to move off the path by going too
+far, it will count an extra walk against you! Finish with as few
+walks as possible!
+
+Also don't forget to write the code correctly. After you
+put your commands in loops and if-statements, you have to
+put one closing brace for each if-statement, while-loop,
+and for-loop. To put a closing brace, click "end".
