@@ -70,7 +70,7 @@
       </select>
 			<button onclick="selectCallbackMove(); return false;"></button>
     </td>
-	<td rowspan=6><label id="RightHandCol"></label></td>
+	<td rowspan=7><label id="RightHandCol"></label></td>
   </tr>
   <tr>
     <td>
@@ -134,6 +134,11 @@
     <td>
       <button class="button button1" style="margin-right: 50px" onclick="evaluate_arr();return false;"><h3>start</h3></button>
     </td>
+  </tr>
+  <tr>
+  	<td>
+      <button class="button button1" style="margin-right: 50px" onclick="clear_arr();return false;"><h3>clear<br>code</h3></button>
+	</td>
   </tr>
 </table>
     </div>

@@ -58,7 +58,7 @@ h3 {
     left: 0;
     top: 50%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -68,7 +68,8 @@ h3 {
      margin: 0 auto;
 }
 #leftcolumn, #rightcolumn {
-    border: 1px solid white;
+/*    border: 1px solid white; */
+	border: none;
     float: left;
     min-height: 50%;
     color: red;
@@ -92,8 +93,8 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
+/*    border: 1px solid #dddddd; */
+	border: none;
+    text-align: left;
     padding: 8px;
 }
-
