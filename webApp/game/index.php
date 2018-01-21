@@ -16,6 +16,11 @@
 			echo exec("/home/colin/darkforest/mazegen/mazegen 30 30");
 			?>
 		</script>
+		<script>
+			<?php
+			echo $_POST['playerName']
+			?>
+		</script>
 		<script src="block.js"></script>
 		<script src="person.js"></script>
 		<script src="game.js"></script>
