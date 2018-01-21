@@ -82,6 +82,7 @@ function draw()
 		stats.level = boardHeight;
 
 		alert("Congratuations. You took " + stats.time + " seconds to solve level " + (boardHeight-9) + ". Additionally you used " + stats.moves + " moves and used " + stats.numcommands + " commands.");
+		location.reload();
 	}
 }
 
