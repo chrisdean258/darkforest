@@ -68,7 +68,7 @@
 	    <option value="person.moveRight(board);">move right</option>
 	    <option value="person.moveDown(board);">move down</option>
       </select>
-			<button class="button2" onclick="selectCallbackMove(); return false;"></button>
+			<button background-color="white" onclick="selectCallbackMove(); return false;"></button>
     </td>
 	<td rowspan=7><label id="RightHandCol"></label></td>
   </tr>
