@@ -58,7 +58,7 @@ function evaluate_arr()
 {
 	try
 	{
-		setTimeout(function(){eval(arr.join(""));}, 4500);
+		eval(arr.join(""));
 	}
 	catch(ex)
 	{
