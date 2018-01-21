@@ -56,7 +56,24 @@ function selectCallbackDone()
 
 function evaluate_arr()
 {
-	try{
+
+	setTimeout(
+			try
+			{
+				function(){eval(arr.join(""));}
+			}
+			catch(ex)
+			{
+				alert("Could not interpret your code.\n");
+			}
+			,
+			4500);
+
+
+
+
+/*	try
+	{
 		setTimeout(function(){eval(arr.join(""));}, 4500);
 	}
 	catch(ex)
@@ -64,6 +81,7 @@ function evaluate_arr()
 		alert("Could not interpret your code.\n");
 		person.reset();
 	}
+	*/
 }
 
 function clear_arr()
