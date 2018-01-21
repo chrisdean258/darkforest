@@ -121,12 +121,12 @@
 		<option value="19">for 19 steps</option>
 		<option value="20">for 20 steps</option>
 	  </select>
-	  <button class="button button2" style="margin-right: 50px" onclick="selectCallbackFor(); return false;"><h5>+</h5></button>
+	  <button class="button button2" style="margin-right: 50px" onclick="selectCallbackFor(); return false;">+</button>
 	</td>
   </tr>
   <tr>
     <td>
-			<button onclick="selectCallbackDone(); return false;">end</button>
+		<button onclick="selectCallbackDone(); return false;">end</button>
 	</td>
   </tr>
   <tr>

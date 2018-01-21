@@ -12,19 +12,27 @@
   
     /*Button code, from the index.php page*/ 
 	.button {
-    border: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: initial;
-    font-size: 16px;
-    margin: 2px 1px;
-    cursor: pointer;
-	padding: 3px 10px;
+		border: none;
+		text-align: center;
+		text-decoration: none;
+		display: initial;
+		margin: 2px 1px;
+		cursor: pointer;
+		padding: 3px 10px;
 	}
 
-.button1 {background-color: #575555;}
-.button2 {background-color: white;}
+	.button1
+	{
+		font-size: 16px;
+		background-color: #575555;
+		color: black;
+	}
+	.button2
+	{
+		font-size: 12px;
+		background-color: white;
+		color: red;
+	}
 
 
 /*Font information for 8bit font*/
