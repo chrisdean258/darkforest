@@ -1,0 +1,109 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+  
+    /*Background solid color to match the darkest trees*/
+    body {
+     background-color: #222035; 
+     background-size: cover;
+    }
+  
+    /*Button code, from the index.php page*/ 
+	.button {
+		border: none;
+		text-align: center;
+		text-decoration: none;
+		display: initial;
+		margin: 2px 1px;
+		cursor: pointer;
+		padding: 3px 10px;
+	}
+
+	.button1
+	{
+		font-size: 16px;
+		background-color: #575555;
+		color: black;
+	}
+	.button2
+	{
+		font-size: 12px;
+		background-color: white;
+		color: red;
+	}
+
+
+/*Font information for 8bit font*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ConnectionSerif.otf);
+}
+h1 {
+    font-family: myFirstFont;
+    font-size: 80px;
+    color:#990b0b;
+}
+h2 {
+    font-family: myFirstFont;
+    font-size: 40px;
+    color:#990b0b;
+}
+h3 {
+    font-family: myFirstFont;
+    font-size: 20px;
+    color:black;
+}
+
+
+/*CODE FOR THE SPLIT DIV*/
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+}
+
+#wrapper {
+     width: 98%;
+     height: 98%;
+     margin: 0 auto;
+}
+#leftcolumn, #rightcolumn {
+/*    border: 1px solid white; */
+	border: none;
+    float: left;
+    min-height: 50%;
+    color: red;
+}
+#leftcolumn {
+     width: 50%;
+     height: 98%;
+     background-color: transparent;
+}
+#rightcolumn {
+     width: 50%;
+     height: 98%;
+     background-color: transparent;
+}
+
+/*CODE FOR THE TABLE*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+/*    border: 1px solid #dddddd; */
+	border: none;
+    text-align: left;
+    padding: 8px;
+}

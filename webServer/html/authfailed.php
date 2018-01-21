@@ -1,0 +1,3 @@
+<?php
+Print "Auth Failed"
+?>
