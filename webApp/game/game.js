@@ -61,6 +61,7 @@ function reset()
 
 function draw()
 {
+	this.alerted = false;
 	for(var i = 0; i < board.length; i++)
 	{
 		for(var j = 0; j < boardWidth; j++)
@@ -68,16 +69,16 @@ function draw()
 			board[i][j].show();
 		}
 	}
-
 	person.update(board);
 	person.show();
 
-	if(person.x === boardWidth-1 && person.y === 0)
+	if(!this.alerted && person.x === boardWidth-1 && person.y === 0)
 	{
+		this.alerted = true;
 		var stats = {};
 		stats.moves = person.nummoves;
 		stats.numcommands = arr.len;
-		stats.time = Date.now() - start / 1000;
+		stats.time = Math.floor((Date.now() - start) / 1000);
 		stats.level = boardHeight;
 
 		alert("Congratuations. You took " + stats.time + " seconds to solve level " + (boardHeight-9) + ". Additionally you used " + stats.moves + " moves and used " + stats.numcommands + " commands");
