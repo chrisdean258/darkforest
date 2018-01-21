@@ -92,7 +92,6 @@
 		<option value="while(person.canMove_left()){">while can move left</option>
 		<option value="while(person.canMove_right()){">while can move right</option>
 		<option value="while(person.canMove_down()){">while can move down</option>
-		<option value="while(true){">forever</option>
 	  </select>
 			<button onclick="selectCallbackWhile(); return false;"></button>
 	</td>
