@@ -56,9 +56,8 @@ function evaluate_arr(run=true)
 	}
 	catch(ex)
 	{
-		console.log("bad code");
-		person.x = 0;
-		person.y = boardHeight-1;
+		person.reset();
+		alert("Could not interpret your code.\n");
 	}
 }
 
