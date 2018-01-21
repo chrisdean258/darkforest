@@ -62,7 +62,7 @@ function evaluate_arr()
 	}
 	catch(ex)
 	{
-		alert(ex);
+		alert("Syntax Error: Make sure that every opening brace has just one closing brace.");
 		person.reset();
 	}
 }
