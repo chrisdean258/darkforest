@@ -7,6 +7,7 @@ function Person(x, y, blockSize, imageName)
 	this.moves = [];
 	this.futurex = x;
 	this.futurey = y;
+	this.nummoves = 0;
 
 	this.reset = function()
 	{
@@ -29,7 +30,6 @@ function Person(x, y, blockSize, imageName)
 		{
 			this.moves[0](this);
 			this.moves.splice(0,1);
-			this.show();
 
 			for(i = -1; i < 2; i++) for(j = -1; j < 2; j++)
 			{
@@ -69,6 +69,7 @@ function Person(x, y, blockSize, imageName)
 
 	this.moveLeft = function(b)
 	{
+		this.nummoves++;
 		if(this.canMove_left(b))
 		{
 			this.futurex--;
@@ -78,6 +79,7 @@ function Person(x, y, blockSize, imageName)
 
 	this.moveUp = function(b)
 	{
+		this.nummoves++;
 		if(this.canMove_up(b))
 		{
 			this.futurey--;
@@ -87,6 +89,7 @@ function Person(x, y, blockSize, imageName)
 
 	this.moveDown = function(b)
 	{
+		this.nummoves++;
 		if(this.canMove_down(b))
 		{
 			this.futurey++;

@@ -1,6 +1,7 @@
 var canvas;
 var person;
 var board;
+var start;
 
 var blockSize = 600/boardHeight;
 
@@ -55,6 +56,7 @@ function reset()
 
 	board[boardWidth-1][0].visible = true;
 
+	start = Date.now();
 }
 
 function draw()
@@ -70,7 +72,16 @@ function draw()
 	person.update(board);
 	person.show();
 
-	if(person.x === boardWidth-1 && person.y === 0) reset();
+	if(person.x === boardWidth-1 && person.y === 0)
+	{
+		var stats;
+		stats.moves = person.nummoves;
+		stats.numcommands = arr.len;
+		stats.time = Date.now() - start / 1000;
+		stats.level = boardHeight;
+
+		alert("Congratuations. You took " + stats.time + " seconds to solve level " + (boardHeight-9) + ". Additionally you used " + stats.moves + " moves and used " + stats.numcommands + " commands");
+	}
 }
 
 function revealAll()
