@@ -68,7 +68,7 @@
 	    <option value="person.moveRight(board);">move right</option>
 	    <option value="person.moveDown(board);">move down</option>
       </select>
-			<button class="button button1" onclick="selectCallbackMove(); return false;"></button>
+	  <button class="button button2" style="margin-right: 50px" onclick="selectCallbackMove(); return false;">+</button>
     </td>
 	<td rowspan=7><label id="RightHandCol"></label></td>
   </tr>
@@ -81,7 +81,7 @@
 		<option value="if(person.canMove_right(board)){">if can move right</option>
 		<option value="if(person.canMove_down(board)){">if can move down</option>
 	  </select>
-			<button onclick="selectCallbackIf(); return false;"></button>
+	  <button class="button button2" style="margin-right: 50px" onclick="selectCallbackIf(); return false;">+</button>
 	</td>
   </tr>
   <tr>
@@ -93,7 +93,7 @@
 		<option value="while(person.canMove_right(board)){">while can move right</option>
 		<option value="while(person.canMove_down(board)){">while can move down</option>
 	  </select>
-			<button onclick="selectCallbackWhile(); return false;"></button>
+	  <button class="button button2" style="margin-right: 50px" onclick="selectCallbackWhile(); return false;">+</button>
 	</td>
   </tr>
   <tr>
@@ -121,12 +121,12 @@
 		<option value="19">for 19 steps</option>
 		<option value="20">for 20 steps</option>
 	  </select>
-			<button onclick="selectCallbackFor(); return false;"></button>
+	  <button class="button button2" style="margin-right: 50px" onclick="selectCallbackFor(); return false;">+</button>
 	</td>
   </tr>
   <tr>
     <td>
-			<button onclick="selectCallbackDone(); return false;">end</button>
+		<button onclick="selectCallbackDone(); return false;">end</button>
 	</td>
   </tr>
   <tr>
