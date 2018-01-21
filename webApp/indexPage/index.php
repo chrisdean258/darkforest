@@ -12,7 +12,6 @@
   <link rel="stylesheet" type="text/css" href="css/darkmain.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 
@@ -50,16 +49,13 @@
 				  <form id="loginForm" method="post" action="">
 					<!--<input type="text" name="playerName" placeholder="Username">-->
 					<!--<input type="password" name="pass2" placeholder="Password">-->
-					
-  				<center><button class="button button1" href="10index.php"><h3>10x10</h3></button></center>
-  				<center><button class="button button1" href="#"><h3>15x15</h3></button></center>
-  				<center><button class="button button1" href="#"><h3>20x20</h3></button></center>
-  				<center><button class="button button1" href="#"><h3>25x25</h3></button></center>
-  				<center><button class="button button1" href="game/index.php"><h3>30x30</h3></button></center>
-  				<center><button class="button button1" href="#"><h3>35x35</h3></button></center>
-				
 		
-				<a href="http://google.com" class="button button1">Go to Google</a>
+				<a href="game/10index.php" class="button button1">10x10</a>
+				<a href="game/15index.php" class="button button1">15x15</a>
+				<a href="game/20index.php" class="button button1">20x20</a>
+				<a href="game/25index.php" class="button button1">25x25</a>
+				<a href="game/30index.php" class="button button1">30x30</a>
+				<a href="game/35index.php" class="button button1">35x35</a>
 <!--				<form action="http://google.com">
     					<input type="submit" value="Go to Google" />
 				</form>
