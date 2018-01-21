@@ -1,19 +1,28 @@
-var arr = []
+var arr = [];
+var numBraces = 0;
 
 function selectCallbackMove()
 {
 	arr.push(document.getElementById("moveSelect").value);
+	for(var i = 0; i < numBraces; i++)
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }
 function selectCallbackIf()
 {
 	arr.push(document.getElementById("ifSelect").value);
+	for(var i = 0; i < numBraces; i++)
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
+	numBraces++;
 }
 function selectCallbackWhile()
 {
 	arr.push(document.getElementById("whileSelect").value);
+	for(var i = 0; i < numBraces; i++)
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
+	numBraces++;
 }
 function selectCallbackFor()
 {
@@ -24,11 +33,17 @@ function selectCallbackFor()
 	arr.push("for(var " + lv + " = 0; " + lv + " < " + lc + " ; " + lv + "++){");
 
 	this.initialvar.push("j");
+	for(var i = 0; i < numBraces; i++)
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
+	numBraces++;
 }
 function selectCallbackDone()
 {
 	arr.push("}");
+	numBraces--;
+	for(var i = 0; i < numBraces; i++)
+		arr[arr.length-1] = "&nbsp;&nbsp;&nbsp;&nbsp;" + arr[arr.length-1];
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }
 
@@ -41,14 +56,14 @@ function evaluate_arr(run=true)
 	}
 	catch(ex)
 	{
-		console.log("bad code");
-		person.x = 0;
-		person.y = boardHeight-1;
+		person.reset();
+		alert("Could not interpret your code.\n");
 	}
 }
 
 function clear_arr()
 {
 	arr = [];
+	numBraces=0;
 	document.getElementById('RightHandCol').innerHTML = arr.join("<br>");
 }
