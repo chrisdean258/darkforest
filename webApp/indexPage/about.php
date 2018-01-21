@@ -37,11 +37,11 @@
 
 <div class="align-left">
 	<p><br><br>
-	We are the Low Gravity Hack Lads, a super excited group of students from The University of Tennessee, Knoxville. We are all majoring in computer science, during our time with the University we have had the great opportunity to learn more about our amazing field and want to share that knowledge with the next generation of students. 
+	We are the Low Gravity Hack Lads, a super excited group of students from The University of Tennessee, Knoxville. We are all majoring in Computer Science. During our time with the University we've had the great opportunity to learn more about our amazing field and we want to share that knowledge with the next generation of students.
 <br><br>
-Dark Forest is a simple to use web application that is targeted at younger students who might be interested in technology, science or Engineering. Our goal is to help foster and inspire the imaginations of children while helping teach them skills that they can apply to their trade one day. 
+Dark Forest is a simple-to-use Web application that is targeted at younger students who might be interested in technology, science, or engineering. Our goal is to help foster and inspire the imaginations of children while helping teach them skills that they can apply to their trade one day.
 <br><br>
-Our application helps teach the basic concepts of programming logic and allows the student to visualize the actions they have taken. The game is simple and consists of a maze at the lower right corner of the screen and you must escalope at the upper right. The map will initially be cover with black until you start to explore the corners of the forest. During this time, you will control the actions of the main character by selecting basic programming terms and conditions that will guide you through the maze; and hopefully into your future as a programmer. 
+Our application helps introduce the basic concepts of programming logic and allows student to visualize the actions caused by the code they've written. The game is simple: You find yourself in a maze at the lower left corner of the screen and you must escape at the upper right. The map will initially be covered with black until you start to explore throughout the forest. During this time, you will control your actions by selecting basic programming terms and conditions that will guide you through the maze, which hopefully will help you learn to think like a programmer.
 
 	</p>
 </div>
