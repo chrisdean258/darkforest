@@ -12,7 +12,6 @@
   
     /*Button code, from the index.php page*/ 
 	.button {
-    background-color: #575555; 
     border: none;
     color: black;
     text-align: center;
@@ -21,9 +20,11 @@
     font-size: 16px;
     margin: 2px 1px;
     cursor: pointer;
+	padding: 3px 10px;
 	}
 
-.button1 {padding: 3px 10px;}
+.button1 {background-color: #575555;}
+.button2 {background-color: white;}
 
 
 /*Font information for 8bit font*/
