@@ -80,6 +80,7 @@ int Maze::IsDone()
 int Maze::IsAlreadyLegal(int a,int b)
 {
 	if(board[a][b]==1) return 1;
+	return 0;
 }
 
 int Maze::IsPossibleBlock(int a,int b)
